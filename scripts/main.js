@@ -63,17 +63,20 @@ if (localStorage.toggled != "dark" ){
 } else {
   modeText.innerText = "Light mode";
 }
-modeSwitch.addEventListener("click"||"touchstart" ,function(){
-   //localstorage values are always strings (no booleans!)  
-   if (localStorage.toggled != "dark" ){
-      $('body').toggleClass("dark", true );
-      localStorage.toggled = "dark";
-      modeText.innerText = "Light mode";
-   } else {
-      $('body').toggleClass("dark", false );
-      localStorage.toggled = "light";
-      modeText.innerText = "Dark mode";
-   }
+
+["click", "touchstart"].forEach(function(event) {
+	modeSwitch.addEventListener(event ,function(){
+	//localstorage values are always strings (no booleans!)  
+	if (localStorage.toggled != "dark" ){
+		$('body').toggleClass("dark", true );
+		localStorage.toggled = "dark";
+		modeText.innerText = "Light mode";
+	} else {
+		$('body').toggleClass("dark", false );
+		localStorage.toggled = "light";
+		modeText.innerText = "Dark mode";
+	}
+	});
 });
 
 // Adjust sidebar for screensize (mobile)

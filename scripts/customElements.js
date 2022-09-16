@@ -21,19 +21,19 @@
       <div class="menu">
           <ul class="menu-links" id="menu-links">
               <li>
-                  <a class="list-group-item-action" href="#list-item-1">
+                  <a class="list-group-item-action" href="#home">
                       <i class='bx bx-home-alt icon'></i>
                       <span class="text nav-text">Dashboard</span>
                   </a>
               </li>
               <li>
-                  <a class="list-group-item-action" href="#list-item-2">
+                  <a class="list-group-item-action" href="#projects">
                   <i class='bx bx-book icon'></i>
                       <span class="text nav-text">Projects</span>
                   </a>
               </li>
               <li>
-                  <a class="list-group-item-action" href="#list-item-3">
+                  <a class="list-group-item-action" href="#more">
                       <i class='bx bx-collection icon'></i>
                       <span class="text nav-text">More</span>
                   </a>
@@ -193,7 +193,7 @@
     }
     
     connectedCallback() {
-      this.innerHTML = `<h1 class="text title" id="list-item-1">Matthew Taylor</h1>
+      this.innerHTML = `<h1 class="text title" id="home">Matthew Taylor</h1>
       <div class="container my-5">
         <div class="card row flex-row">
           <img class="col-lg-4 card-img-start img-fluid p-0 portrait" src="" alt="Matthew Taylor Personal Photo"/>
@@ -223,7 +223,7 @@
     }
     
     connectedCallback() {
-      this.innerHTML = `<h1 class="text title" id="list-item-2">My Projects</h1>
+      this.innerHTML = `<h1 class="text title" id="projects">My Projects</h1>
       <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class= "col-md-6">
@@ -282,7 +282,7 @@
     }
     
     connectedCallback() {
-      this.innerHTML = `<h1 class="text title" id="list-item-3">More Stuff</h1>
+      this.innerHTML = `<h1 class="text title" id="more">More</h1>
       <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class= "col-md-4">

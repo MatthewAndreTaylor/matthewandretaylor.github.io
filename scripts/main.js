@@ -63,7 +63,7 @@ if (localStorage.toggled != "dark" ){
 } else {
   modeText.innerText = "Light mode";
 }
-modeSwitch.addEventListener("click",function(){
+modeSwitch.addEventListener("click"||"touchstart" ,function(){
    //localstorage values are always strings (no booleans!)  
    if (localStorage.toggled != "dark" ){
       $('body').toggleClass("dark", true );

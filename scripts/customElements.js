@@ -22,13 +22,13 @@ class NavComponent extends HTMLElement {
           <ul class="menu-links" id="menu-links">
               <li>
                   <a class="list-group-item-action" href="#list-item-1">
-                      <i class='bx bx-home-alt icon' ></i>
+                      <i class='bx bx-home-alt icon'></i>
                       <span class="text nav-text">Dashboard</span>
                   </a>
               </li>
               <li>
                   <a class="list-group-item-action" href="#list-item-2">
-                      <i class='bx bx-store icon'></i>
+                  <i class='bx bx-book icon'></i>
                       <span class="text nav-text">Projects</span>
                   </a>
               </li>
@@ -101,7 +101,7 @@ class NavComponent extends HTMLElement {
         <div class="col-sm py-2">
           <div class="card">
             <div class="card-body">
-              <div class="float-right text-muted small">September 2022</div>
+              <div class="float-right text-muted small">Sept. 2022</div>
               <h4 class="card-title">Started Computer Science at the University of Toronto</h4>
               <p class="card-text">...</p>
             </div>
@@ -112,7 +112,7 @@ class NavComponent extends HTMLElement {
         <div class="col-sm py-2">
           <div class="card">
             <div class="card-body">
-            <div class="float-right text-muted small">July 2022</div>
+            <div class="float-right text-muted small">Jul. 2022</div>
               <h4 class="card-title">Accepted into Computer Science Specialist program</h4>
               <p class="card-text">...</p>
             </div>
@@ -186,7 +186,149 @@ class NavComponent extends HTMLElement {
     </div>`;
     }
   }
+
+  class About extends HTMLElement {
+    constructor() {
+      super();
+    }
+    
+    connectedCallback() {
+      this.innerHTML = `<h1 class="text title" id="list-item-1">Matthew Taylor</h1>
+      <div class="container my-5">
+        <div class="card row flex-row">
+          <img class="col-lg-4 card-img-start img-fluid p-0 portrait" src="./images/Matthew.jpg" alt="Matthew Taylor Personal Photo"/>
+            <div class="col-lg-8 card-body">
+                <h1 class="card-title">Who is Matthew Taylor...</h1>
+                <p class="card-text">...</p>
+            </div>
+        </div>
+      </div>`;
+    }
+  }
+
+  class Projects extends HTMLElement {
+    constructor() {
+      super();
+    }
+    
+    connectedCallback() {
+      this.innerHTML = `<h1 class="text title" id="list-item-2">My Projects</h1>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class= "col-md-6">
+            <div class="card mb-4">
+              <div class = "card-header rounded-bottom" style ="border-radius: 20px;">
+                <img class="card-img-top" src="./images/unity.png" loading="lazy">
+              </div>
+              <div class="card-body text-center" style ="border-radius: 20px;">
+                  <small class="card-title">Unity</small>
+                  <p class="card-text">C# Scripting</p>
+                  <a href="#" class="btn btn-primary">
+                    <small>View on Github</small>
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div class= "col-md-6">
+            <div class="card mb-4">
+              <div class = "card-header rounded-bottom" style ="border-radius: 20px;">
+                <img class="card-img-top" src="./images/HelloWorld.png" loading="lazy">
+              </div>
+              <div class="card-body text-center" style ="border-radius: 20px;">
+                  <small class="card-title">Hello</small>
+                  <p class="card-text">World</p>
+                  <a href="#" class="btn btn-primary">
+                    <small>View on Github</small>
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div class= "col-md-6">
+            <div class="card mb-4">
+              <div class = "card-header rounded-bottom" style ="border-radius: 20px;">
+                <img class="card-img-top" src="./images/dog.png" loading="lazy">
+              </div>
+              <div class="card-body text-center" style ="border-radius: 20px;">
+                  <small class="card-title">Coming</small>
+                  <p class="card-text">Soon</p>
+                  <span class="d-inline-block" tabindex="0" rel="tooltip" data-placement="bottom" title="Sorry it's a Secret">
+                    <a href="#" target="_blank" class="btn btn-primary disabled">
+                      <small>View on Github</small>
+                    </a>
+                  </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>`;
+    }
+  }
+
+  class More extends HTMLElement {
+    constructor() {
+      super();
+    }
+    
+    connectedCallback() {
+      this.innerHTML = `<h1 class="text title" id="list-item-3">More Stuff</h1>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class= "col-md-4">
+            <div class="card mb-3">
+              <div class = "card-header rounded-bottom" style ="border-radius: 20px;">
+                <img class="card-img-top" src="./images/python.jpg" loading="lazy">
+              </div>
+              <div class="card-body text-center" style ="border-radius: 20px;">
+                  <small class="card-title">Python</small>
+                  <p class="card-text">Bots</p>
+                  <a href="" target="_blank" class="btn btn-primary">
+                    <small>View on Github</small>
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div class= "col-md-4">
+            <div class="card mb-3">
+              <div class = "card-header rounded-bottom" style ="border-radius: 20px;">
+                <img class="card-img-top" src="./images/smartcontract.png" loading="lazy">
+              </div>
+              <div class="card-body text-center" style ="border-radius: 20px;">
+                  <small class="card-title">Solidity</small>
+                  <p class="card-text">Smart Contracts</p>
+                  <a href="" target="_blank" class="btn btn-primary">
+                    <small>View on Github</small>
+                  </a>
+                  <a href="#" class="btn btn-primary" id="fund" rel="tooltip" data-placement="bottom" title="Crypto Wallet Required">
+                    <small>Interact</small>
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div class= "col-md-4">
+            <div class="card mb-3">
+              <div class = "card-header rounded-bottom" style ="border-radius: 20px;">
+                <img class="card-img-top" src="./images/profile.gif" loading="lazy">
+              </div>
+              <div class="card-body text-center" style ="border-radius: 20px;">
+                  <small class="card-title">Polygon</small>
+                  <p class="card-text">Nfts</p>
+                  <a href="https://opensea.io/collection/fuzziestpixels" target="_blank" class="btn btn-primary">
+                    <small>View on Mainnet</small>
+                  </a>
+                  <a href="https://testnets.opensea.io/collection/fuzziest-pixels-test" target="_blank" class="btn btn-primary">
+                    <small>View on Testnet</small>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>`;
+    }
+  }
   
   customElements.define('nav-component', NavComponent);
   customElements.define('roadmap-component', Timeline);
+  customElements.define('about-component', About);
+  customElements.define('projects-component', Projects);
+  customElements.define('more-component', More);
   

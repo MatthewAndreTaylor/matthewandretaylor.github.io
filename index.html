@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="">
+
+  <!----======== Web3 ======== -->
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+  
+  <!----======== CSS ======== -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!----===== Boxicons CSS ===== -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <!----===== Custom Elements ===== -->
+  <script type="text/javascript" src="./scripts/customElements.js"></script>
+  
+  <title>Matthew Taylor- Home</title>
+</head>
+<body>
+  <!----===== SideBar ===== -->
+  <script>
+    // Toggle just below the element not to flash on load store in cookie
+    if(!localStorage.getItem('toggled')) localStorage.setItem('toggled', 'dark');
+    $('body').toggleClass(localStorage.toggled);
+  </script>
+  <nav class="sidebar">
+    <script>
+      if(!localStorage.getItem('closed')) localStorage.setItem('closed', 'close');
+      $('nav').toggleClass(localStorage.closed);
+    </script>
+    <nav-component></nav-component>
+  </nav>
+  <!----===== Content ===== -->
+  <section class="home">
+    <div id="toasts"></div>
+    <h1 class="text title">Matthew Taylor</h1>
+    <div class="container my-5">
+        <div class="card row flex-row">
+          <img class="col-lg-4 card-img-start img-fluid p-0 portrait" src="./images/Matthew.jpg" alt="Matthew Taylor Personal Photo"/>
+            <div class="col-lg-8 card-body">
+                <h1 class="card-title">Who is Matthew Taylor...</h1>
+                <p class="card-text">...</p>
+            </div>
+        </div>
+    </div>
+    <roadmap-component></roadmap-component>
+  </section>
+  <script type="text/javascript" src="./scripts/local.js"></script>
+  <script type="text/javascript" src="./scripts/main.js"></script>
+</body>
+</html>

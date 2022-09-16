@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="">
+
+  <!----======== Web3 ======== -->
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+  
+  <!----======== CSS ======== -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!----===== Boxicons CSS ===== -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <!----===== Custom Elements ===== -->
+  <script type="text/javascript" src="./scripts/customElements.js"></script>
+  
+  <title>Matthew Taylor- More</title>
+</head>
+<body>
+  <!----===== SideBar ===== -->
+  <script>
+    // Toggle just below the element not to flash on load store in cookie
+    if(!localStorage.getItem('toggled')) localStorage.setItem('toggled', 'dark');
+    $('body').toggleClass(localStorage.toggled);
+  </script>
+  <nav class="sidebar">
+    <script>
+        if(!localStorage.getItem('closed')) localStorage.setItem('closed', '');
+        $('nav').toggleClass(localStorage.closed);
+    </script>
+    <nav-component></nav-component>
+  </nav>
+  <!----===== Content ===== -->
+  <section class="home">
+    <div id="toasts"></div>
+    <h1 class="text title">More Stuff</h1>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class= "col-md-4">
+          <div class="card mb-3">
+            <div class = "card-header rounded-bottom" style ="border-radius: 20px;">
+              <img class="card-img-top" src="./images/python.jpg" loading="lazy">
+            </div>
+            <div class="card-body text-center" style ="border-radius: 20px;">
+                <small class="card-title">Python</small>
+                <p class="card-text">Bots</p>
+                <a href="" target="_blank" class="btn btn-primary">
+                  <small>View on Github</small>
+                </a>
+            </div>
+          </div>
+        </div>
+        <div class= "col-md-4">
+          <div class="card mb-3">
+            <div class = "card-header rounded-bottom" style ="border-radius: 20px;">
+              <img class="card-img-top" src="./images/smartcontract.png" loading="lazy">
+            </div>
+            <div class="card-body text-center" style ="border-radius: 20px;">
+                <small class="card-title">Solidity</small>
+                <p class="card-text">Smart Contracts</p>
+                <a href="" target="_blank" class="btn btn-primary">
+                  <small>View on Github</small>
+                </a>
+            </div>
+          </div>
+        </div>
+        <div class= "col-md-4">
+          <div class="card mb-3">
+            <div class = "card-header rounded-bottom" style ="border-radius: 20px;">
+              <img class="card-img-top" src="./images/profile.gif" loading="lazy">
+            </div>
+            <div class="card-body text-center" style ="border-radius: 20px;">
+                <small class="card-title">Polygon</small>
+                <p class="card-text">Nfts</p>
+                <a href="https://opensea.io/collection/fuzziestpixels" target="_blank" class="btn btn-primary">
+                  <small>View on Mainnet</small>
+                </a>
+                <a href="https://testnets.opensea.io/collection/fuzziest-pixels-test" target="_blank" class="btn btn-primary">
+                  <small>View on Testnet</small>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <a href="#" class="btn btn-primary btn-lg" id="fund" rel="tooltip" data-placement="bottom" title="Crypto Wallet Required">
+        <i class='bx bx-donate-heart'></i>
+        <small>Fund a Project</small>
+      </a>
+    </div>
+  </section>
+  <script type="text/javascript" src="./scripts/local.js"></script>
+  <script type="text/javascript" src="./scripts/main.js"></script>
+</body>
+</html>

@@ -64,9 +64,7 @@ if (localStorage.toggled != "dark" ){
   modeText.innerText = "Light mode";
 }
 
-["click", "touchstart"].forEach(function(event) {
-	modeSwitch.addEventListener(event ,function(){
-	createToast('generic', 'hi')
+modeSwitch.addEventListener("click" ,function(){
 	//localstorage values are always strings (no booleans!)  
 	if (localStorage.toggled != "dark" ){
 		$('body').toggleClass("dark", true );
@@ -77,7 +75,6 @@ if (localStorage.toggled != "dark" ){
 		localStorage.toggled = "light";
 		modeText.innerText = "Dark mode";
 	}
-	});
 });
 
 // Adjust sidebar for screensize (mobile)

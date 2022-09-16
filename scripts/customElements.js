@@ -19,17 +19,23 @@ class NavComponent extends HTMLElement {
   </header>
   <div class="menu-bar">
       <div class="menu">
-          <ul class="menu-links">
+          <ul class="menu-links" id="menu-links">
               <li>
-                  <a href="index.html">
+                  <a class="list-group-item-action" href="#list-item-1">
                       <i class='bx bx-home-alt icon' ></i>
                       <span class="text nav-text">Dashboard</span>
                   </a>
               </li>
               <li>
-                  <a href="projects.html">
+                  <a class="list-group-item-action" href="#list-item-2">
                       <i class='bx bx-store icon'></i>
                       <span class="text nav-text">Projects</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="list-group-item-action" href="#list-item-3">
+                      <i class='bx bx-collection icon'></i>
+                      <span class="text nav-text">More</span>
                   </a>
               </li>
               <li>
@@ -53,12 +59,6 @@ class NavComponent extends HTMLElement {
           </ul>
       </div>
       <div class="bottom-content">
-          <li>
-              <a href="more.html">
-                  <i class='bx bx-collection icon' ></i>
-                  <span class="text nav-text">More</span>
-              </a>
-          </li>
           <li class="mode">
               <div class="sun-moon">
                   <i class='bx bx-moon icon moon'></i>

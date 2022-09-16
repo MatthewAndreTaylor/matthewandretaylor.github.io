@@ -205,8 +205,8 @@
       </div>
       <div class="container my-5">
         <div class="card row flex-row-reverse">
-        <a data-toggle="modal" data-target=".bd-example-modal-lg">
-          <img class="col-lg-4 card-img-end img-fluid p-0 portrait" src="" alt="Matthew Taylor Resume"/>
+        <a data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg">
+          <img class="col-lg-4 card-img-end img-fluid p-0" src="" alt="Matthew Taylor Resume"/>
         </a>
           <div class="col-lg-8 card-body">
               <h1 class="card-title">Resume</h1>
@@ -262,7 +262,7 @@
               <div class="card-body text-center" style ="border-radius: 20px;">
                   <small class="card-title">Coming</small>
                   <p class="card-text">Soon</p>
-                  <span class="d-inline-block" tabindex="0" rel="tooltip" data-placement="bottom" title="In Development">
+                  <span class="d-inline-block" tabindex="0" rel="tooltip" data-bs-placement="bottom" title="In Development">
                     <a href="#" target="_blank" class="btn btn-primary disabled">
                       <small>View on Github</small>
                     </a>
@@ -310,7 +310,7 @@
                   <a href="" target="_blank" class="btn btn-primary">
                     <small>View on Github</small>
                   </a>
-                  <a href="#" class="btn btn-primary" id="fund" rel="tooltip" data-placement="bottom" title="Crypto Wallet Required">
+                  <a href="#" class="btn btn-primary" id="fund" rel="tooltip" data-bs-placement="bottom" title="Crypto Wallet Required">
                     <small>Interact</small>
                   </a>
               </div>

@@ -1,4 +1,4 @@
-class NavComponent extends HTMLElement {
+  class NavComponent extends HTMLElement {
     constructor() {
       super();
     }
@@ -8,7 +8,7 @@ class NavComponent extends HTMLElement {
     <header>
       <div class="image-text">
           <span class="image">
-              <img src="./images/dog.jpg" alt="">
+              <img src="" alt="">
           </span>
           <div class="text logo-text">
               <span class="name">Welcome!</span>
@@ -196,11 +196,22 @@ class NavComponent extends HTMLElement {
       this.innerHTML = `<h1 class="text title" id="list-item-1">Matthew Taylor</h1>
       <div class="container my-5">
         <div class="card row flex-row">
-          <img class="col-lg-4 card-img-start img-fluid p-0 portrait" src="./images/Matthew.jpg" alt="Matthew Taylor Personal Photo"/>
-            <div class="col-lg-8 card-body">
-                <h1 class="card-title">Who is Matthew Taylor...</h1>
-                <p class="card-text">...</p>
-            </div>
+          <img class="col-lg-4 card-img-start img-fluid p-0 portrait" src="" alt="Matthew Taylor Personal Photo"/>
+          <div class="col-lg-8 card-body">
+              <h1 class="card-title">Who is Matthew Taylor...</h1>
+              <p class="card-text">...</p>
+          </div>
+        </div>
+      </div>
+      <div class="container my-5">
+        <div class="card row flex-row-reverse">
+        <a data-toggle="modal" data-target=".bd-example-modal-lg">
+          <img class="col-lg-4 card-img-end img-fluid p-0 portrait" src="" alt="Matthew Taylor Resume"/>
+        </a>
+          <div class="col-lg-8 card-body">
+              <h1 class="card-title">Resume</h1>
+              <p class="card-text">...</p>
+          </div>
         </div>
       </div>`;
     }
@@ -246,12 +257,12 @@ class NavComponent extends HTMLElement {
           <div class= "col-md-6">
             <div class="card mb-4">
               <div class = "card-header rounded-bottom" style ="border-radius: 20px;">
-                <img class="card-img-top" src="./images/dog.png" loading="lazy">
+                <img class="card-img-top" src="" loading="lazy">
               </div>
               <div class="card-body text-center" style ="border-radius: 20px;">
                   <small class="card-title">Coming</small>
                   <p class="card-text">Soon</p>
-                  <span class="d-inline-block" tabindex="0" rel="tooltip" data-placement="bottom" title="Sorry it's a Secret">
+                  <span class="d-inline-block" tabindex="0" rel="tooltip" data-placement="bottom" title="In Development">
                     <a href="#" target="_blank" class="btn btn-primary disabled">
                       <small>View on Github</small>
                     </a>

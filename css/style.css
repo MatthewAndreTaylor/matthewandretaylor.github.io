@@ -15,7 +15,7 @@
     --primary-color-light: #F6F5FF;
     --toggle-color: #DDD;
     --text-color: #707070;
-    --shadow-color: #090909;
+    --shadow-color: #302b2b;
 
     /* ====== Transition ====== */
     --tran-03: all 0.05s ease;
@@ -49,7 +49,7 @@ body.dark{
     --primary-color-light: #3a3b3c;
     --toggle-color: #fff;
     --text-color: #ccc;
-    --shadow-color: #faeded;
+    --shadow-color: #e2cece;
 }
 
 /* ===== Sidebar ===== */
@@ -316,7 +316,8 @@ body.dark .home .text{
     border-radius: 20px;
     transition: transform 0.25s ease-out;
     cursor: pointer;
-    background-color: var(--sidebar-color);;
+    background-color: var(--sidebar-color);
+    display: flex;
   }
 
 .card-title,
@@ -326,7 +327,7 @@ body.dark .home .text{
   
 .card:hover{
     transform: translateY(-6px);
-    box-shadow: var(--shadow-color) 0 6px 10px;
+    box-shadow: var(--shadow-color) 0 1px 3px;
 }
 
 #fund{

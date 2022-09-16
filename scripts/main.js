@@ -66,6 +66,7 @@ if (localStorage.toggled != "dark" ){
 
 ["click", "touchstart"].forEach(function(event) {
 	modeSwitch.addEventListener(event ,function(){
+	createToast('generic', 'hi')
 	//localstorage values are always strings (no booleans!)  
 	if (localStorage.toggled != "dark" ){
 		$('body').toggleClass("dark", true );

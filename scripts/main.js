@@ -79,13 +79,13 @@ modeSwitch.addEventListener("click" ,function(){
 
 // Adjust sidebar for screensize (mobile)
 $(window).resize(function(){
-	if($(window).width()<850){
+	if($(window).width()<900){
 	  localStorage.setItem('closed', 'close');
 	  $('.sidebar').addClass('close');
 	}
 });
 
-if($(window).width()<850){
+if($(window).width()<900){
 	localStorage.setItem('closed', 'close');
 	$('.sidebar').addClass('close');
 }

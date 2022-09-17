@@ -361,7 +361,7 @@ body.dark .home .text{
 }
 
   /*on screen shink add stuff  #todo*/
-  @media (max-width: 950px) {
+  @media (max-width: 900px) {
     .toggle {
         visibility: hidden;
     }

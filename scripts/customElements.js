@@ -195,7 +195,7 @@
     connectedCallback() {
       this.innerHTML = `<h1 class="text title" id="home">Matthew Taylor</h1>
       <div class="container my-5">
-        <div class="card row flex-row">
+        <div class="card row flex-row no-gutters">
           <img class="col-lg-4 card-img-start img-fluid p-0 portrait" src="" alt="Matthew Taylor Personal Photo"/>
           <div class="col-lg-8 card-body">
               <h1 class="card-title">Who is Matthew Taylor...</h1>
@@ -204,7 +204,7 @@
         </div>
       </div>
       <div class="container my-5">
-        <div class="card row flex-row-reverse">
+        <div class="card row flex-row-reverse no-gutters">
         <a data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg">
           <img class="col-lg-4 card-img-end img-fluid p-0" src="" alt="Matthew Taylor Resume"/>
         </a>

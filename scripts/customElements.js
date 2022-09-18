@@ -322,8 +322,8 @@
                 <img class="card-img-top" src="./images/profile.gif" loading="lazy">
               </div>
               <div class="card-body text-center" style ="border-radius: 20px;">
-                  <small class="card-title">Polygon</small>
-                  <p class="card-text">Nfts</p>
+                  <small class="card-title">Opensea</small>
+                  <p class="card-text">Generative Art</p>
                   <a href="https://opensea.io/collection/fuzziestpixels" target="_blank" class="btn btn-primary">
                     <small>View on Mainnet</small>
                   </a>

@@ -367,8 +367,6 @@ body.dark .home .text{
     }
     #toasts {
         width: 60%;
-        top: auto;
-        bottom: 10px;
     }
     .sidebar.close{
         width: 60px;

@@ -53,14 +53,9 @@ if($(window).width()<900){
 $(function () {
   $("[rel='tooltip']").tooltip();
 });
-
-// Data: (generic,success,error,warning,info)
-function createToast(data,str){
-	$.toast(data,str);
-}
   
-  // Return custom toast
-  (function(window, $){
+// Return custom toast
+(function(window, $){
 	"use strict";
   
 	var defaultConfig = {
@@ -70,7 +65,7 @@ function createToast(data,str){
 	  autoDismissDelay: 5000,
 	  transitionDuration: 500
 	};
-  
+
 	$.toast = function(config){
 	  var size = arguments.length;
 	  var isString = typeof(config) === 'string';
@@ -130,13 +125,11 @@ function createToast(data,str){
 	  return this;
 	};
 	
-  })(window, jQuery);
+})(window, jQuery);
 
 // Wallet Buttons
 walletConnect = document.querySelector('#fund');
 if (walletConnect) walletConnect.addEventListener("click" , () =>{ fund() });
-
-const provider = new ethers.providers.Web3Provider(window.ethereum)
 address = "0x6B7723753442241cb4fe24854f319E21129D9ACf";
 ABI =[
 	{
@@ -173,16 +166,24 @@ ABI =[
 ];
 
 async function fund(){
-	await provider.send("eth_requestAccounts", []).then(() => {
-		createToast('generic','Logged in 📝');
-	}).catch(()=>{
-		createToast('error','Unable to get account ✖');
-	});
-	const signer = provider.getSigner();
-	const contract = new ethers.Contract(address, ABI, signer);
-	await contract.newDonation({value: ethers.utils.parseUnits('100000000', 'gwei')}).then(() => {
-		createToast('success','Trxn success 😎');
-	}).catch(() => {
-		createToast('error','Trxn failed ✖');
-	})
+	try 
+	{
+		const provider = new ethers.providers.Web3Provider(window.ethereum);
+		await provider.send("eth_requestAccounts", []).then(() => {
+			$.toast('generic','Logged in 📝');
+		}).catch(()=>{
+			$.toast('error','Unable to get account ✖');
+		});
+		const signer = provider.getSigner();
+		const contract = new ethers.Contract(address, ABI, signer);
+		await contract.newDonation({value: ethers.utils.parseUnits('100000000', 'gwei')}).then(() => {
+			$.toast('success','Trxn success 😎');
+		}).catch(() => {
+			$.toast('error','Trxn failed ✖');
+		})
+	}
+	catch(err) 
+	{
+		$.toast('error','Requires web3 enabled browser ✖');
+	}
 }

@@ -44,7 +44,7 @@
                   </a>
               </li>
               <li>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/matthew-taylor-93b113260">
                       <i class='bx bxl-linkedin icon'></i>
                       <span class="text nav-text">Linkedin</span>
                   </a>

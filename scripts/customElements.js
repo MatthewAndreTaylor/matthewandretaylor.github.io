@@ -11,8 +11,7 @@
               <img src="" alt="">
           </span>
           <div class="text logo-text">
-              <span class="name">Welcome!</span>
-              <span class="sub">Matt's Stuff</span>
+              <span class="name">Navigation</span>
           </div>
       </div>
       <i class='bx bx-chevron-right toggle'></i>
@@ -23,7 +22,7 @@
               <li>
                   <a class="list-group-item-action" href="#home">
                       <i class='bx bx-home-alt icon'></i>
-                      <span class="text nav-text">Dashboard</span>
+                      <span class="text nav-text">About</span>
                   </a>
               </li>
               <li>
@@ -35,7 +34,7 @@
               <li>
                   <a class="list-group-item-action" href="#more">
                       <i class='bx bx-collection icon'></i>
-                      <span class="text nav-text">More</span>
+                      <span class="text nav-text">Miscellaneous</span>
                   </a>
               </li>
               <li>
@@ -102,8 +101,8 @@
           <div class="card">
             <div class="card-body">
               <div class="float-right text-muted small">Sept. 2022</div>
-              <h4 class="card-title">Started Computer Science at the University of Toronto</h4>
-              <p class="card-text">...</p>
+              <h4 class="card-title">Computer Science at the University of Toronto</h4>
+              <p class="card-text">I entered university with knowledge of java as my first programming language. My first year courses for data structures and algorithms were written in python.</p>
             </div>
           </div>
         </div>
@@ -113,8 +112,8 @@
           <div class="card">
             <div class="card-body">
             <div class="float-right text-muted small">Jul. 2022</div>
-              <h4 class="card-title">Accepted into Computer Science Specialist program</h4>
-              <p class="card-text">...</p>
+              <h4 class="card-title">Accepted into Specialist program</h4>
+              <p class="card-text">I am very exicted and interested to learn about machine learning and cryptography as a specialization.</p>
             </div>
           </div>
         </div>
@@ -151,69 +150,14 @@
         <div class="col-sm py-2">
           <div class="card">
             <div class="card-body">
-              <div class="float-right text-muted small">May 11th 2022</div>
-              <h4 class="card-title">...</h4>
-              <p>...</p>
+              <div class="float-right text-muted small">Dec 20th 2022</div>
+              <h4 class="card-title">Finished Second year first semester</h4>
+              <p class="card-text">I started working on larger projects and collaborating on projects with my peers.</p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-sm py-2">
-          <div class="card">
-            <div class="card-body">
-              <div class="float-right text-muted small">Jan 8th 2023</div>
-              <h4 class="card-title">More applications</h4>
-              <p>...</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
-          <div class="row h-50">
-            <div class="col border-right">&nbsp;</div>
-            <div class="col">&nbsp;</div>
-          </div>
-          <h5 class="m-2">
-            <span class="badge badge-pill bg-light border">&nbsp;</span>
-          </h5>
-          <div class="row h-50">
-            <div class="col">&nbsp;</div>
-            <div class="col">&nbsp;</div>
-          </div>
-        </div>
-        <div class="col-sm"></div>
       </div>
     </div>`;
-    }
-  }
-
-  class About extends HTMLElement {
-    constructor() {
-      super();
-    }
-    
-    connectedCallback() {
-      this.innerHTML = `<h1 class="text title" id="home">Matthew Taylor</h1>
-      <div class="container my-5">
-        <div class="card row flex-row no-gutters">
-          <img class="col-lg-4 card-img-start img-fluid p-0 portrait" src="" alt="Matthew Taylor Personal Photo"/>
-          <div class="col-lg-8 card-body">
-              <h1 class="card-title">Who is Matthew Taylor...</h1>
-              <p class="card-text">...</p>
-          </div>
-        </div>
-      </div>
-      <div class="container my-5">
-        <div class="card row flex-row-reverse no-gutters">
-        <a data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg">
-          <img class="col-lg-4 card-img-end img-fluid p-0" src="" alt="Matthew Taylor Resume"/>
-        </a>
-          <div class="col-lg-8 card-body">
-              <h1 class="card-title">Resume</h1>
-              <p class="card-text">...</p>
-          </div>
-        </div>
-      </div>`;
     }
   }
 
@@ -226,15 +170,19 @@
       this.innerHTML = `<h1 class="text title" id="projects">My Projects</h1>
       <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class= "col-md-6">
+        <div class= "col-md-6">
             <div class="card mb-4">
               <div class = "card-header rounded-bottom" style ="border-radius: 20px;">
-                <img class="card-img-top" src="./images/unity.png" loading="lazy">
+                <img class="card-img-top" src="./images/image.png" loading="lazy">
               </div>
               <div class="card-body text-center" style ="border-radius: 20px;">
-                  <small class="card-title">Unity</small>
-                  <p class="card-text">C# Scripting</p>
-                  <a href="#" class="btn btn-primary">
+                  <small class="card-title">Matching Game</small>
+                  <p>
+                    <small class="card-text badge">JavaScript</small>
+                    <small class="card-text badge">Real-time Databse</small>
+                    <small class="card-text badge">React Native</small>
+                  </p>
+                  <a href="https://github.com/MatthewAndreTaylor/MatchingGame" target="_blank" class="btn btn-primary">
                     <small>View on Github</small>
                   </a>
               </div>
@@ -243,30 +191,18 @@
           <div class= "col-md-6">
             <div class="card mb-4">
               <div class = "card-header rounded-bottom" style ="border-radius: 20px;">
-                <img class="card-img-top" src="./images/HelloWorld.png" loading="lazy">
+                <img class="card-img-top" src="./images/trees.png" loading="lazy">
               </div>
               <div class="card-body text-center" style ="border-radius: 20px;">
-                  <small class="card-title">Hello</small>
-                  <p class="card-text">World</p>
-                  <a href="#" class="btn btn-primary">
+                  <small class="card-title">3D Forest Visualization</small>
+                  <p>
+                    <small class="card-text badge">Java</small>
+                    <small class="card-text badge">JavaFX</small>
+                    <small class="card-text badge">Maven</small>
+                  </p>
+                  <a href="https://github.com/MatthewAndreTaylor/207CourseProject" target="_blank" class="btn btn-primary">
                     <small>View on Github</small>
                   </a>
-              </div>
-            </div>
-          </div>
-          <div class= "col-md-6">
-            <div class="card mb-4">
-              <div class = "card-header rounded-bottom" style ="border-radius: 20px;">
-                <img class="card-img-top" src="" loading="lazy">
-              </div>
-              <div class="card-body text-center" style ="border-radius: 20px;">
-                  <small class="card-title">Coming</small>
-                  <p class="card-text">Soon</p>
-                  <span class="d-inline-block" tabindex="0" rel="tooltip" data-bs-placement="bottom" title="In Development">
-                    <a href="#" target="_blank" class="btn btn-primary disabled">
-                      <small>View on Github</small>
-                    </a>
-                  </span>
               </div>
             </div>
           </div>
@@ -282,18 +218,18 @@
     }
     
     connectedCallback() {
-      this.innerHTML = `<h1 class="text title" id="more">More</h1>
+      this.innerHTML = `<h1 class="text title" id="more">Miscellaneous</h1>
       <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class= "col-md-4">
             <div class="card mb-3">
               <div class = "card-header rounded-bottom" style ="border-radius: 20px;">
-                <img class="card-img-top" src="./images/python.jpg" loading="lazy">
+                <img class="card-img-top" src="./images/platformer.png" loading="lazy">
               </div>
               <div class="card-body text-center" style ="border-radius: 20px;">
-                  <small class="card-title">Python</small>
-                  <p class="card-text">Bots</p>
-                  <a href="" target="_blank" class="btn btn-primary">
+                  <small class="card-title">2d Platformer Builder</small>
+                  <p><small class="card-text badge">JavaScript</small></p>
+                  <a href="https://github.com/MatthewAndreTaylor/2D-Platformer-Playground" target="_blank" class="btn btn-primary">
                     <small>View on Github</small>
                   </a>
               </div>
@@ -305,9 +241,9 @@
                 <img class="card-img-top" src="./images/smartcontract.png" loading="lazy">
               </div>
               <div class="card-body text-center" style ="border-radius: 20px;">
-                  <small class="card-title">Solidity</small>
-                  <p class="card-text">Smart Contracts</p>
-                  <a href="" target="_blank" class="btn btn-primary">
+                  <small class="card-title">Smart Contracts</small>
+                  <p><small class="card-text badge">Solidity</small></p>
+                  <a href="https://github.com/MatthewAndreTaylor/SmartContracts" target="_blank" class="btn btn-primary">
                     <small>View on Github</small>
                   </a>
                   <a href="#" class="btn btn-primary" id="fund" rel="tooltip" data-bs-placement="bottom" title="Crypto Wallet Required">
@@ -322,24 +258,27 @@
                 <img class="card-img-top" src="./images/profile.gif" loading="lazy">
               </div>
               <div class="card-body text-center" style ="border-radius: 20px;">
-                  <small class="card-title">Opensea</small>
-                  <p class="card-text">Generative Art</p>
-                  <a href="https://opensea.io/collection/fuzziestpixels" target="_blank" class="btn btn-primary">
-                    <small>View on Mainnet</small>
-                  </a>
-                  <a href="https://testnets.opensea.io/collection/fuzziest-pixels-test" target="_blank" class="btn btn-primary">
-                    <small>View on Testnet</small>
-                  </a>
+                  <small class="card-title">Generative Art</small>
+                  <p><small class="card-text badge">Python</small><small class="card-text badge">Solidity</small></p>
+                  <div class="dropup">
+                    <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      View
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a href="https://opensea.io/collection/fuzziestpixels" target="_blank" class="dropdown-item"><small>Mainnet</small></a></li>
+                      <li><a href="https://testnets.opensea.io/collection/fuzziest-pixels-test" target="_blank" class="dropdown-item"><small>Testnet</small></a></li>
+                      <li><a href="https://github.com/MatthewAndreTaylor/OpenSeaMintingBot" target="_blank" class="dropdown-item"><small>Github</small></a></li>
+                    </ul>
+                  </div>
               </div>
             </div>
-          </div>
-        </div>`;
+        </div>
+      </div>`;
     }
   }
   
   customElements.define('nav-component', NavComponent);
   customElements.define('roadmap-component', Timeline);
-  customElements.define('about-component', About);
   customElements.define('projects-component', Projects);
   customElements.define('more-component', More);
   

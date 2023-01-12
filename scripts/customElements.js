@@ -20,7 +20,7 @@
       <div class="menu">
           <ul class="menu-links" id="menu-links">
               <li>
-                  <a class="list-group-item-action" href="#home">
+                  <a class="list-group-item-action" href="#about">
                       <i class='bx bx-home-alt icon'></i>
                       <span class="text nav-text">About</span>
                   </a>
@@ -32,7 +32,7 @@
                   </a>
               </li>
               <li>
-                  <a class="list-group-item-action" href="#more">
+                  <a class="list-group-item-action" href="#misc">
                       <i class='bx bx-collection icon'></i>
                       <span class="text nav-text">Miscellaneous</span>
                   </a>
@@ -178,7 +178,7 @@
               <div class="card-body text-center" style ="border-radius: 20px;">
                   <small class="card-title">Matching Game</small>
                   <p>
-                    <small class="card-text badge">JavaScript</small>
+                    <small class="card-text badge">JavaScript </small>
                     <small class="card-text badge">Real-time Databse</small>
                     <small class="card-text badge">React Native</small>
                   </p>
@@ -196,7 +196,7 @@
               <div class="card-body text-center" style ="border-radius: 20px;">
                   <small class="card-title">3D Forest Visualization</small>
                   <p>
-                    <small class="card-text badge">Java</small>
+                    <small class="card-text badge">Java <i class='bx bxl-java'></i></small>
                     <small class="card-text badge">JavaFX</small>
                     <small class="card-text badge">Maven</small>
                   </p>
@@ -218,7 +218,7 @@
     }
     
     connectedCallback() {
-      this.innerHTML = `<h1 class="text title" id="more">Miscellaneous</h1>
+      this.innerHTML = `<h1 class="text title" id="misc">Miscellaneous</h1>
       <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class= "col-md-4">

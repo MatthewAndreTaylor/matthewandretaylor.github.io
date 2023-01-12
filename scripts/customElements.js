@@ -101,7 +101,7 @@
           <div class="card">
             <div class="card-body">
               <div class="float-right text-muted small">Sept. 2022</div>
-              <h4 class="card-title">Computer Science at the University of Toronto</h4>
+              <h4 class="card-title subtitle">Computer Science at the University of Toronto</h4>
               <p class="card-text">I entered university with knowledge of java as my first programming language. My first year courses for data structures and algorithms were written in python.</p>
             </div>
           </div>
@@ -112,7 +112,7 @@
           <div class="card">
             <div class="card-body">
             <div class="float-right text-muted small">Jul. 2022</div>
-              <h4 class="card-title">Accepted into Specialist program</h4>
+              <h4 class="card-title subtitle">Accepted into Specialist program</h4>
               <p class="card-text">I am very exicted and interested to learn about machine learning and cryptography as a specialization.</p>
             </div>
           </div>
@@ -150,8 +150,8 @@
         <div class="col-sm py-2">
           <div class="card">
             <div class="card-body">
-              <div class="float-right text-muted small">Dec 20th 2022</div>
-              <h4 class="card-title">Finished Second year first semester</h4>
+              <div class="float-right text-muted small">Dec. 20th 2022</div>
+              <h4 class="card-title subtitle">Finished Second year first semester</h4>
               <p class="card-text">I started working on larger projects and collaborating on projects with my peers.</p>
             </div>
           </div>

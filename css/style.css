@@ -14,7 +14,7 @@
     --primary-color: #6da2dd;
     --primary-color-light: #F6F5FF;
     --toggle-color: #7ca6cf;
-    --text-color: #707070;
+    --text-color: #424242;
     --shadow-color: #302b2b;
 
     /* ====== Transition ====== */
@@ -301,7 +301,7 @@ body.dark .home .text{
 }
 
 .title{
-    color: #ccc !important;
+    font-size: clamp(1rem, 5vw, 2rem); 
     padding-bottom: 36px !important;
 }
 

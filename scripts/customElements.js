@@ -167,7 +167,7 @@
     }
     
     connectedCallback() {
-      this.innerHTML = `<h1 class="text title" id="projects">My Projects</h1>
+      this.innerHTML = `<h1 class="text title" id="projects">Projects</h1>
       <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class= "col-md-6">

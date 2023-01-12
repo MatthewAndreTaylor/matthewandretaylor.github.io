@@ -178,7 +178,7 @@
               <div class="card-body text-center" style ="border-radius: 20px;">
                   <small class="card-title">Matching Game</small>
                   <p>
-                    <small class="card-text badge">JavaScript </small>
+                    <small class="card-text badge">JavaScript <i class='bx bxl-javascript'></i></small>
                     <small class="card-text badge">Real-time Databse</small>
                     <small class="card-text badge">React Native</small>
                   </p>

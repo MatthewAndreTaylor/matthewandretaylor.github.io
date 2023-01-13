@@ -128,10 +128,10 @@ $(function () {
 })(window, jQuery);
 
 // Wallet Buttons
-walletConnect = document.querySelector('#fund');
-if (walletConnect) walletConnect.addEventListener("click" , () =>{ fund() });
-address = "0x6B7723753442241cb4fe24854f319E21129D9ACf";
-ABI =[
+const walletConnect = document.querySelector('#transact');
+if (walletConnect) walletConnect.addEventListener("click" , () =>{ transact() });
+const address = "0x6B7723753442241cb4fe24854f319E21129D9ACf";
+ const ABI =[
 	{
 		"inputs": [],
 		"stateMutability": "nonpayable",
@@ -165,7 +165,7 @@ ABI =[
 	}
 ];
 
-async function fund(){
+async function transact(){
 	try 
 	{
 		const provider = new ethers.providers.Web3Provider(window.ethereum);

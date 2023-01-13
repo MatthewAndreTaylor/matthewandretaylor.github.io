@@ -241,12 +241,12 @@
                 <img class="card-img-top" src="./images/smartcontract.png" loading="lazy">
               </div>
               <div class="card-body text-center" style ="border-radius: 20px;">
-                  <small class="card-title">Portfolio with web3</small>
+                  <small class="card-title">Portfolio With Web3</small>
                   <p><small class="card-text badge">JavaScript <i class='bx bxl-javascript'></i></small></p>
                   <a href="https://github.com/MatthewAndreTaylor/Matthew-Portfolio" target="_blank" class="btn btn-primary">
                     <small>View on Github</small>
                   </a>
-                  <a href="#" class="btn btn-primary" id="fund" rel="tooltip" data-bs-placement="bottom" title="Crypto Wallet Required">
+                  <a href="#" class="btn btn-primary" id="transact" rel="tooltip" data-bs-placement="bottom" title="Crypto Wallet Required">
                     <small>Interact</small>
                   </a>
               </div>

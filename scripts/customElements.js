@@ -179,8 +179,8 @@
                   <small class="card-title">Matching Game</small>
                   <p>
                     <small class="card-text badge">JavaScript <i class='bx bxl-javascript'></i></small>
-                    <small class="card-text badge">Real-time Databse</small>
-                    <small class="card-text badge">React Native</small>
+                    <small class="card-text badge">Real-time Databse <i class='bx bx-server'></i></small>
+                    <small class="card-text badge">React Native <i class='bx bxl-react' ></i></small>
                   </p>
                   <a href="https://github.com/MatthewAndreTaylor/MatchingGame" target="_blank" class="btn btn-primary">
                     <small>View on Github</small>
@@ -228,7 +228,7 @@
               </div>
               <div class="card-body text-center" style ="border-radius: 20px;">
                   <small class="card-title">2d Platformer Builder</small>
-                  <p><small class="card-text badge">JavaScript</small></p>
+                  <p><small class="card-text badge">JavaScript <i class='bx bxl-javascript'></i></small></p>
                   <a href="https://github.com/MatthewAndreTaylor/2D-Platformer-Playground" target="_blank" class="btn btn-primary">
                     <small>View on Github</small>
                   </a>

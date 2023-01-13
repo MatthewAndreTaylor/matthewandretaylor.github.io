@@ -301,18 +301,12 @@ body.dark .home .text{
 }
 
 .title{
-    font-size: clamp(1.2rem, 5vw, 2.5rem); 
+    font-size: clamp(1.1rem, 6vw, 2.5rem) !important; 
     padding-bottom: 36px !important;
 }
 
 .subtitle{
-    font-size: clamp(1.1rem, 5vw, 1.5rem); 
-}
-
-.portrait{
-    border-radius: 20px;
-    -webkit-mask-image: linear-gradient(black, transparent);
-    mask-image: linear-gradient(black, transparent);
+    font-size: clamp(0.8rem, 4vw, 1.5rem); 
 }
 
 /*cards*/

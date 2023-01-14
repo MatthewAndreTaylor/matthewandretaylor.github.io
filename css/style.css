@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     /* ===== Colors ===== */
     --body-color: #f0f2f7;
@@ -24,10 +28,6 @@
     --tran-06: all 0.6s ease;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
 body{
     min-height: 100vh;
     background-color: var(--body-color);
@@ -37,19 +37,35 @@ body{
     background-size: cover;
 }
 
+body.dark{
+    --body-color: #121212;
+    --sidebar-color: #242526;
+    --primary-color: #3a3b3c;
+    --primary-color-light: #3a3b3c;
+    --toggle-color: #fff;
+    --text-color: #ffffffe2;
+    --shadow-color: #e2cece;
+}
+
 ::selection{
     background-color: var(--primary-color);
     color: #fff;
 }
 
-body.dark{
-    --body-color: #18191a;
-    --sidebar-color: #242526;
-    --primary-color: #3a3b3c;
-    --primary-color-light: #3a3b3c;
-    --toggle-color: #fff;
-    --text-color: #ccc;
-    --shadow-color: #e2cece;
+.btn-primary{
+    background-color: #0054B9;
+}
+
+.text-muted{
+    color:#ABB0B5 !important;
+}
+
+.pill{
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1.25rem;
 }
 
 /* ===== Sidebar ===== */
@@ -110,7 +126,6 @@ body.dark{
     opacity: 0;
     transition: var(--tran-03);
 }
-/* =========================== */
 
 .sidebar header{
     position: relative;
@@ -144,7 +159,6 @@ header .image-text .profession{
 
 .sidebar header .image img{
     width: 40px;
-    /* better icon maybe circle +++*/
     border-radius: 8px;
 }
 
@@ -328,96 +342,13 @@ body.dark .home .text{
     box-shadow: var(--shadow-color) 0 1px 3px;
 }
 
-#fund{
-    position: relative;
-    text-align: center;
-}
-
-/*======== toasts =========*/
-.custom-toast{
-    display: flex;
-    align-items: center;
-}
-  
-  .custom-toast img {
-    background-size: 50px 50px;
-    height: 40px;
-    width: 40px;
-}
-  
-  .custom-toast p {
-    font-size: 14px;
-    padding: 10px;
-}
-  
-  #toasts {
-    min-height: 0;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 350px;
-}
-
-  /*on screen shink add stuff  #todo*/
-  @media (max-width: 900px) {
+/*on screen shrink*/
+@media (max-width: 900px) {
     .toggle {
         visibility: hidden;
-    }
-    #toasts {
-        width: 60%;
     }
     .sidebar.close{
         width: 60px;
         padding: 10px 0px;
     }
-}
-  
-  #toasts .toast {
-    background: #d6d8d9;
-    border-radius: 5px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, .1);
-    color: rgba(0,0,0, .6);
-    cursor: default;
-    margin-bottom: 10px;
-    opacity: 0;
-    position: relative;
-    padding: 10px;
-    transform: translateY(15%);
-    transition: opacity .5s ease-in-out, transform .5s ease-in-out;
-    width: 100%;
-    will-change: opacity, transform;
-    z-index: 1100;
-} 
-  
-  #toasts .toast.success {
-    background: #26d68a;
-}
-  
-  #toasts .toast.warning {
-    background: #ffa533;
-}
-  
-  #toasts .toast.info {
-    background: #2cbcff;
-}
-  
-  #toasts .toast.error {
-    background: #f44336;
-}
-  
-  #toasts .toast.show {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity .5s ease-in-out, transform .5s ease-in-out;
-}
-  
-  #toasts .toast .close {
-    cursor: pointer;
-    font-size: 24px;
-    height: 16px;
-    margin-top: -22px;
-    position: absolute;
-    right: 14px;
-    top: 50%;
-    width: 16px;
 }

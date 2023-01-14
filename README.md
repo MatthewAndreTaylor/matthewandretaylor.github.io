@@ -12,8 +12,11 @@ View at https://matthewtaylor.netlify.app
 
 - Make a personal potfolio to display my work 👷‍♂️
 - Use javascript to save local storage state of components like the navbar and dark mode 🌛
-- Learn about how html components are rendered 
+- Learn about how html components are rendered 🌍
 - Handle different device types 📱
-- Create my own custom components
+- Create my own custom components 💻
 - Style the website with css and [bootstrap](https://getbootstrap.com/) 🎨
-- Use [ethers.js](https://docs.ethers.org/v5/) to iteract with smart contracts from the web 📜
+- Learn about layout and page navigation 🗺
+- Follow accessibility website standards 👁
+
+![image](https://user-images.githubusercontent.com/100451342/212494711-d201a2d1-c2c7-4a52-838d-db7003e6b724.png)

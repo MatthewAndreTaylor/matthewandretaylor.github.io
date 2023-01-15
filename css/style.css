@@ -12,7 +12,6 @@ html{
 }
 
 :root{
-    /* ===== Colors ===== */
     --body-color: #f0f2f7;
     --sidebar-color: #FFF;
     --primary-color: #6da2dd;
@@ -21,17 +20,12 @@ html{
     --text-color: #424242;
     --shadow-color: #302b2b;
 
-    /* ====== Transition ====== */
-    --tran-03: all 0.05s ease;
-    --tran-04: all 0.3s ease;
-    --tran-05: all 0.3s ease;
-    --tran-06: all 0.6s ease;
+    --tran-01: all 0.07s ease;
+    --tran-02: all 0.3s ease;
 }
 
 body{
-    min-height: 100vh;
     background-color: var(--body-color);
-    transition: var(--tran-05);
     background-image: url(../images/back.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,32 +65,22 @@ body.dark{
 /* ===== Sidebar ===== */
 .sidebar{
     position: fixed;
-    top: 0;
-    left: 0;
     height: 100%;
     width: 250px;
     padding: 10px 14px;
     background: var(--sidebar-color);
-    transition: var(--tran-05);
-    z-index: 100;  
+    transition: var(--tran-02);
+    z-index: 1;  
 }
 .sidebar.close{
     width: 90px;
 }
 
-/* ===== Reusable code - Here ===== */
 .sidebar li{
     height: 50px;
-    list-style: none;
     display: flex;
     align-items: center;
     margin-top: 10px;
-}
-
-.sidebar header .image,
-.sidebar .icon{
-    min-width: 60px;
-    border-radius: 6px;
 }
 
 .sidebar .icon{
@@ -112,7 +96,7 @@ body.dark{
 .sidebar .text,
 .sidebar .icon{
     color: var(--text-color);
-    transition: var(--tran-03);
+    transition: var(--tran-01);
 }
 
 .sidebar .text{
@@ -120,46 +104,20 @@ body.dark{
     font-weight: 500;
     white-space: nowrap;
     opacity: 1;
-    transition: var(--tran-06);
+    transition: var(--tran-01);
 }
 .sidebar.close .text{
     opacity: 0;
-    transition: var(--tran-03);
+    transition: var(--tran-01);
 }
 
 .sidebar header{
     position: relative;
 }
 
-.sidebar header .image-text{
+.sidebar header .text{
     display: flex;
-    align-items: center;
-}
-.sidebar header .logo-text{
-    display: flex;
-    flex-direction: column;
-}
-header .image-text .name {
-    margin-top: 2px;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-header .image-text .profession{
-    font-size: 16px;
-    margin-top: -2px;
-    display: block;
-}
-
-.sidebar header .image{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.sidebar header .image img{
-    width: 40px;
-    border-radius: 8px;
+    align-items: column;
 }
 
 .sidebar header .toggle{
@@ -178,7 +136,7 @@ header .image-text .profession{
     justify-content: center;
     font-size: 25px;
     cursor: pointer;
-    transition: var(--tran-03);
+    transition: var(--tran-01);
 }
 
 body.dark .sidebar header .toggle{
@@ -202,7 +160,6 @@ body.dark .sidebar header .toggle{
     width: 100%;
     border-radius: 6px;
     text-decoration: none;
-    transition: var(--tran-04);
 }
 
 .sidebar li a:hover{
@@ -231,14 +188,13 @@ body.dark .sidebar li a:hover .text{
     border-radius: 6px;
     background-color: var(--primary-color-light);
     position: relative;
-    transition: var(--tran-05);
+    transition: var(--tran-02);
 }
 
 .menu-bar .mode .sun-moon{
     height: 50px;
     width: 60px;
 }
-
 .mode .sun-moon i{
     position: absolute;
 }
@@ -269,7 +225,7 @@ body.dark .mode .sun-moon i.moon{
     width: 40px;
     border-radius: 25px;
     background-color: var(--toggle-color);
-    transition: var(--tran-05);
+    transition: var(--tran-02);
 }
 
 .switch::before{
@@ -282,7 +238,7 @@ body.dark .mode .sun-moon i.moon{
     left: 5px;
     transform: translateY(-50%);
     background-color: var(--sidebar-color);
-    transition: var(--tran-04);
+    transition: var(--tran-02);
 }
 
 body.dark .switch::before{
@@ -292,11 +248,10 @@ body.dark .switch::before{
 .home{
     position: absolute;
     top: 0;
-    top: 0;
     left: 250px;
     height: 100vh;
     width: calc(100% - 250px);
-    transition: var(--tran-05);
+    transition: var(--tran-02);
 }
 .home .text{
     font-weight: 500;
@@ -307,9 +262,9 @@ body.dark .switch::before{
 
 .sidebar.close ~ .home{
     left: 76px;
-    height: 100vh;
     width: calc(100% - 76px);
 }
+
 body.dark .home .text{
     color: var(--text-color);
 }
@@ -330,6 +285,7 @@ body.dark .home .text{
     cursor: pointer;
     background-color: var(--sidebar-color);
     display: flex;
+    z-index: 1;
   }
 
 .card-title,
@@ -339,7 +295,7 @@ body.dark .home .text{
   
 .card:hover{
     transform: translateY(-6px);
-    box-shadow: var(--shadow-color) 0 1px 3px;
+    box-shadow: var(--shadow-color) 0 1px 7px;
 }
 
 /*on screen shrink*/

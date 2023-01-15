@@ -5,14 +5,9 @@ class NavComponent extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <header>
-      <div class="image-text">
-          <span class="image">
-              <img src="" alt="">
-          </span>
-          <div class="text logo-text">
-              <span class="name">Navigation</span>
-          </div>
+  <header>
+      <div class="text">
+        <span class="name">Navigation</span>
       </div>
       <i class='bx bx-chevron-right toggle'></i>
   </header>
@@ -21,7 +16,7 @@ class NavComponent extends HTMLElement {
           <ul class="menu-links" id="menu-links">
               <li>
                   <a class="list-group-item-action" href="#about">
-                      <i class='bx bx-home-alt icon'></i>
+                      <i class='bx bx-user-pin icon'></i>
                       <span class="text nav-text">About</span>
                   </a>
               </li>

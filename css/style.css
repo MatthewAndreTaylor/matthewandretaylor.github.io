@@ -50,6 +50,11 @@ body.dark{
     background-color: #0054B9;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+  }  
+
 .text-muted{
     color:#ABB0B5 !important;
 }

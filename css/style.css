@@ -250,6 +250,10 @@ body.dark .switch::before{
     left: 20px;
 }
 
+.panel{
+    margin-bottom: 11rem;
+}
+
 .home{
     position: absolute;
     top: 0;
@@ -276,7 +280,7 @@ body.dark .home .text{
 
 .title{
     font-size: clamp(1.1rem, 6vw, 2.5rem) !important; 
-    padding-bottom: 36px !important;
+    padding-bottom: 7rem !important;
 }
 
 .subtitle{

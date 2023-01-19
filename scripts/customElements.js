@@ -147,7 +147,7 @@ class Timeline extends HTMLElement {
         <div class="col-sm py-2">
           <div class="card">
             <div class="card-body">
-              <div class="float-right text-muted small">Dec. 20th 2022</div>
+              <div class="float-right text-muted small">Dec. 2022</div>
               <h2 class="card-title subtitle">Finished Second year first semester</h2>
               <p class="card-text">I started working on larger projects and collaborating on projects with my peers.</p>
             </div>

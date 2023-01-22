@@ -18,7 +18,7 @@ html{
     --primary-color-light: #F6F5FF;
     --toggle-color: #7ca6cf;
     --text-color: #424242;
-    --shadow-color: rgba(48, 43, 43, 0.1);
+    --shadow-color: rgba(48, 43, 43, 0.15);
 
     --tran-01: all 0.07s ease;
     --tran-02: all 0.3s ease;
@@ -251,7 +251,8 @@ body.dark .switch::before{
 }
 
 .panel{
-    margin-bottom: 11rem;
+    position: relative;
+    padding-bottom: 11rem !important;
 }
 
 .home{
@@ -291,7 +292,6 @@ body.dark .home .text{
 .card{
     border-radius: 20px;
     transition: transform 0.25s ease-out;
-    cursor: pointer;
     background-color: var(--sidebar-color);
     display: flex;
     z-index: 1;
@@ -301,11 +301,16 @@ body.dark .home .text{
 .card-text{
     color: var(--text-color);
 }
+
+.card-img-top{
+    cursor: pointer;
+}
   
 .card:hover{
-    transform: translateY(-6px);
+    transform: translateY(-3px);
     box-shadow: 0.3px 2.8px 4.4px var(--shadow-color),
-    0.7px 6.7px 10.6px var(--shadow-color);
+    0.7px 6.7px 10.6px var(--shadow-color),
+    1.4px 12.5px 15px var(--shadow-color);
 }
 
 /*on screen shrink*/

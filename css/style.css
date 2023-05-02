@@ -127,7 +127,6 @@ img {
 
 .sidebar header .toggle{
     position: absolute;
-    /*open menu height*/
     top: 150%;
     right: -35px;
     transform: translateY(-50%) rotate(180deg);
@@ -313,7 +312,6 @@ body.dark .home .text{
     1.4px 12.5px 15px var(--shadow-color);
 }
 
-/*on screen shrink*/
 @media (max-width: 900px) {
     .toggle {
         visibility: hidden;

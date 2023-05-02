@@ -1,12 +1,10 @@
 // Page buttons
-const body = document.querySelector('body');
-const sidebar = body.querySelector('nav');
 const toggle = body.querySelector(".toggle");
 const modeSwitch = body.querySelector(".toggle-switch");
 const modeText = body.querySelector(".mode-text");
 
 // Sidebar toggle
-toggle.addEventListener("click", () =>{
+toggle.addEventListener("click", () => {
   if(localStorage.closed != "close" ){
     sidebar.classList.toggle("close", true);
     localStorage.closed = "close";
@@ -24,28 +22,28 @@ if (localStorage.toggled != "dark" ){
   modeText.innerText = "Light mode";
 }
 
-modeSwitch.addEventListener("click" ,function(){
+modeSwitch.addEventListener("click" , () => {
 	// Localstorage values are always strings (no booleans!)  
 	if (localStorage.toggled != "dark" ){
-		$('body').toggleClass("dark", true );
+		body.classList.toggle("dark", false);
 		localStorage.toggled = "dark";
 		modeText.innerText = "Light mode";
 	} else {
-		$('body').toggleClass("dark", false );
+		body.classList.toggle("dark", false);
 		localStorage.toggled = "light";
 		modeText.innerText = "Dark mode";
 	}
 });
 
 // Adjust sidebar for screensize (mobile)
-$(window).resize(function(){
-	if($(window).width()<900){
+window.addEventListener("resize", () => {
+	if(window.innerWidth < 900){
 	  localStorage.setItem('closed', 'close');
-	  $('.sidebar').addClass('close');
+	  sidebar.classList.add('close');
 	}
 });
 
-if($(window).width()<900){
+if(window.innerWidth < 900){
 	localStorage.setItem('closed', 'close');
-	$('.sidebar').addClass('close');
+	sidebar.classList.add('close');
 }

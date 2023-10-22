@@ -44,12 +44,6 @@ class NavComponent extends HTMLElement {
                       <span class="text nav-text">Linkedin</span>
                   </a>
               </li>
-              <li>
-                  <a href="https://discord.com/users/318497127238074379">
-                      <i class='bx bxl-discord-alt icon'></i>
-                      <span class="text nav-text">Discord</span>
-                  </a>
-              </li>
           </ul>
       </div>
       <div class="bottom-content">

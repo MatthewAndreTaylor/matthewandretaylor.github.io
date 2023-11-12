@@ -6,7 +6,7 @@ title = 'Matthew Taylor Software Developer'
     github = "https://github.com/MatthewAndreTaylor"
     linkedin = "https://www.linkedin.com/in/matthew-taylor-93b113260"
     nav_title = "matthew_taylor@PC-01:~$"
-    foot_title = "Matthew Taylor"
+    author = "Matthew Taylor"
 
 [menu]
 [[menu.main]]

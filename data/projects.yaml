@@ -1,0 +1,35 @@
+- title: xml-to-pydict
+  languages:
+    - Python
+    - C++
+  github_url: https://github.com/MatthewAndreTaylor/xml-to-pydict
+  description: Python XML to Dictionary Parser
+
+- title: fastqueue
+  languages:
+    - Python
+    - C
+  github_url: https://github.com/MatthewAndreTaylor/fastqueue
+  description: Python Fast Queue Library
+
+- title: MatchingGame
+  languages:
+    - JavaScript
+    - Firebase
+    - ReactNative
+  github_url: https://github.com/MatthewAndreTaylor/MatchingGame
+  description: Match tiles to complete the board. Displays user actions in realtime to all players
+
+- title: MattBlog
+  languages:
+    - Python
+    - Flask
+    - JavaScript
+  github_url: https://github.com/MatthewAndreTaylor/MattBlog
+  description: Matthew Taylor's Personal coding blog featuring a variety of small snippets
+
+- title: 207CourseProject
+  languages:
+    - Java
+  github_url: https://github.com/MatthewAndreTaylor/207CourseProject
+  description: Forest Visualization 3D MVC. Using Data collected from the city of Kitchener

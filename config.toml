@@ -1,0 +1,23 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Matthew Taylor Software Developer'
+
+[params]
+    github = "https://github.com/MatthewAndreTaylor"
+    linkedin = "https://www.linkedin.com/in/matthew-taylor-93b113260"
+    nav_title = "matthew_taylor@PC-01:~$"
+    foot_title = "Matthew Taylor"
+
+[menu]
+[[menu.main]]
+    name = 'Home'
+    pageRef = '#'
+    weight = 10
+[[menu.main]]
+    name = 'About'
+    pageRef = '#about'
+    weight = 20
+[[menu.main]]
+    name = 'Projects'
+    pageRef = '#projects'
+    weight = 30

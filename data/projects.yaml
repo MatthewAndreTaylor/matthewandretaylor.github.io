@@ -1,3 +1,9 @@
+- title:  FashionPixelLabel
+  languages:
+    - Python
+  github_url: https://github.com/MatthewAndreTaylor/FashionPixelLabel
+  description: Segment fashion images and label pixels using convolutional neural networks and superpixels
+
 - title: xml-to-pydict
   languages:
     - Python

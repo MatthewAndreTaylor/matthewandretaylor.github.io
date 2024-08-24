@@ -31,8 +31,16 @@
     - Python
     - Flask
     - JavaScript
-  github_url: https://github.com/MatthewAndreTaylor/MattBlog
+  github_url: https://matthewtaylor.pythonanywhere.com
   description: Matthew Taylor's Personal coding blog featuring a variety of small snippets
+
+- title: ipysketch-lite
+  languages:
+    - Python
+    - TypeScript
+    - JavaScript
+  github_url: https://github.com/MatthewAndreTaylor/ipysketch_lite
+  description: A sketching tool for Jupyter notebooks, dynamically updates the notebook as you draw
 
 - title: 207CourseProject
   languages:

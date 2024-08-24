@@ -12,12 +12,21 @@
     I am very excited and interested in learning about machine learning and cryptography and am working towards gaining more knowledge in these fields.
 
 - date: "May. 2023"
-  title: "Finished Second year"
+  title: "Finished my 2nd year"
   description: |
     Started working on larger projects and collaborating on projects with my peers. Collaborating on open-source projects has piqued my interest.
     The main area of my personal programming development currently has been focused on developing software for the Python ecosystem using the C API.
 
-- date: "Sept. 2023"
-  title: "Started 3rd year"
+- date: "May. 2024"
+  title: "Finished 3rd year"
   description: |
-    Currently, I am enrolled in Introduction to Information Security, Introduction to Artificial Intelligence, Principles of Programming Languages, and Operating Systems.
+    I have completed my third year of university and have started working on my fourth year.
+    My first semester I completed Introduction to Information Security, Introduction to Artificial Intelligence, Principles of Programming Languages, and Operating Systems.
+    I have been working on creating a good portofolio of projects and have been working on a few open-source projects.
+    I also really enjoyed my second semester courses in Machine Learning and Image understanding. For my Image understanding course, I worked on a project that used a convolutional neural network to segment images as well.
+    I also worked on a project that Neural Radiance Fields to construct 3D models from 2D images.
+
+- date: "May. 2024"
+  title: "Started my internship at NVIDIA"
+  description: |
+    I am very excited to start my internship at NVIDIA. I will be working as a Software Intern on the simulation technology team.

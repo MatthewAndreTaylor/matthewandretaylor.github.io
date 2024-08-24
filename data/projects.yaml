@@ -31,7 +31,7 @@
     - Python
     - Flask
     - JavaScript
-  github_url: https://matthewtaylor.pythonanywhere.com
+  github_url: https://matthewtaylor.pythonanywhere.com/
   description: Matthew Taylor's Personal coding blog featuring a variety of small snippets
 
 - title: ipysketch-lite

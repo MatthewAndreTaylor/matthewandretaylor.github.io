@@ -1,0 +1,15 @@
+name: Site Deploy
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  pypi-publish:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: 
+        run: |
+          echo "Deploying site"

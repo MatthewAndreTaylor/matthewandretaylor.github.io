@@ -1,0 +1,24 @@
+{
+  "name": "matthew-portfolio",
+  "version": "1.0.0",
+  "description": "Matthew Taylor's Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewAndreTaylor/Matthew-Portfolio.git"
+  },
+  "author": "Matthew Andre Taylor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatthewAndreTaylor/Matthew-Portfolio/issues"
+  },
+  "homepage": "https://github.com/MatthewAndreTaylor/Matthew-Portfolio#readme",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^6.0.0",
+    "postcss": "^8.4.41",
+    "postcss-cli": "^11.0.0"
+  }
+}

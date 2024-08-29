@@ -1,70 +1,23 @@
 <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="author" content="{{ .Site.Params.author }}">
 <meta name="description" content="{{ .Site.Title }}">
 
 <style>
-    body {
-    background-image: url('{{ "back.svg" | relURL }}');
+body {
+    background-image: url('{{ "media/back.svg" }}');
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-x: hidden;
-    }
-    @keyframes flicker {
-      0% { opacity: 1; }
-      50% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-    h1 {
-        opacity: 0.5;
-        animation: fadeInUp 1s forwards;
-    }
-    video {
-        max-width: 100%;
-        opacity: 0.5;
-        transition: ease-in 0.3s;
-    }
-    .active {
-        transform: translateY(-5px);
-        opacity: 0.9;
-    }
-
-    @keyframes fadeInUp {
-        from {
-            opacity: 0.5;
-            transform: translateY(20px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    #swiper {
-        width: 60vw;
-        margin: 0 auto;
-      }
-    #swiper-track {
-        display: flex;
-    }
-    .swiper-item {
-        display: flex;
-        justify-content: center;
-        min-width: calc(100% - 40px);
-        margin-right: 20px;
-        margin-left: 20px;
-        display: border-box;
-        image-rendering: -webkit-optimize-contrast;
-    }
-    @media (max-width: 1440px) {
-        #swiper {
-            width: 90vw;
-        }
-    }
+}
 </style>
-<link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}">
-<script src="{{ "js/bootstrap.min.js" | relURL }}"></script>
-<link rel="icon" href="{{ "favicon.ico" | relURL }}">
+
+{{ $style := resources.Get "matts-style.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+{{ $css := resources.Get "css/bootstrap.min.css" | resources.PostCSS (dict "outputStyle" "compressed") | minify | fingerprint | resources.PostProcess }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+<link rel="icon" href="{{ "media/favicon.ico" | relURL }}" type="image/x-icon">
 
 <title>{{ .Site.Title }}</title>

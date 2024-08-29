@@ -21,3 +21,6 @@ title = 'Matthew Taylor Software Developer'
     name = 'Projects'
     pageRef = '#projects'
     weight = 30
+
+[build]
+  writeStats = true

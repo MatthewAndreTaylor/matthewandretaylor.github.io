@@ -1,9 +1,3 @@
-body {
-  background-image: url('{{ "back.svg" | relURL }}');
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow-x: hidden;
-}
 @keyframes flicker {
   0% {
     opacity: 1;
@@ -15,17 +9,19 @@ body {
     opacity: 1;
   }
 }
+
 h1 {
   opacity: 0.5;
   animation: fadeInUp 1s forwards;
 }
+
 video {
   max-width: 100%;
   opacity: 0.5;
   transition: ease-in 0.3s;
 }
 .active {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
   opacity: 0.9;
 }
 
@@ -56,6 +52,7 @@ video {
   display: border-box;
   image-rendering: -webkit-optimize-contrast;
 }
+
 @media (max-width: 1440px) {
   #swiper {
     width: 90vw;

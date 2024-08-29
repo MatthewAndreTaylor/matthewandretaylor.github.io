@@ -29,7 +29,6 @@ function changeSlide(changeNumber) {
     currentIndex = slides.length - 1;
   }
   slides[currentIndex].querySelector("video").classList.toggle("active");
-  updatePosition();
 }
 
 function startSwipe(event) {
@@ -76,6 +75,7 @@ function endSwipe() {
   if (movedBy > 50 && currentIndex > 0) {
     changeSlide(-1);
   }
+  updatePosition();
   isDragging = false;
 }
 
@@ -93,6 +93,7 @@ function updateWidth() {
 function autoSlide() {
   if (Date.now() - lastMoveSignal >= 11000) {
     changeSlide(1);
+    updatePosition();
   }
 }
 

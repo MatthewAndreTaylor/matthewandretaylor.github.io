@@ -1,0 +1,17 @@
+<div style="overflow-x: hidden;">
+    <div id="swiper">
+        <div id="swiper-track">
+          {{ $index := 0 }}
+          {{ range .Site.Data.slides }}
+              <div class="swiper-item">
+                <video class="{{ if eq $index 0 }}active{{ end }}" src="{{ .video_path }}" alt="{{ .title }}" preload="auto" autoplay loop muted></video>
+              </div>
+              {{ $index = add $index 1 }}
+          {{ end }}
+        </div>
+    </div>
+</div>
+
+{{ with resources.Get "matts-swiper.js" | minify | fingerprint }}
+<script src="{{ .RelPermalink }}" defer></script>
+{{ end }}

@@ -1,4 +1,4 @@
-- title:  FashionPixelLabel
+- title: FashionPixelLabel
   languages:
     - Python
   github_url: https://github.com/MatthewAndreTaylor/FashionPixelLabel
@@ -16,7 +16,7 @@
     - Python
     - C
   github_url: https://github.com/MatthewAndreTaylor/fastqueue
-  description: Python Fast Queue Library
+  description: Python Fast Queue Library, fine tune your queue for performance
 
 - title: MatchingGame
   languages:
@@ -40,10 +40,17 @@
     - TypeScript
     - JavaScript
   github_url: https://github.com/MatthewAndreTaylor/ipysketch_lite
-  description: A sketching tool for Jupyter notebooks, dynamically updates the notebook as you draw
+  description: Sketching tool for Jupyter notebooks, dynamically updates the notebook as you draw
 
 - title: 207CourseProject
   languages:
     - Java
   github_url: https://github.com/MatthewAndreTaylor/207CourseProject
   description: Forest Visualization 3D MVC. Using Data collected from the city of Kitchener
+
+- title: SnowFallSaga
+  languages:
+    - Python
+    - JavaScript
+  github_url: https://github.com/MatthewAndreTaylor/Snowfall-Saga
+  description: A winter themed MMO providing realtime multiplayer mini-games as microservices.

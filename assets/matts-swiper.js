@@ -99,3 +99,18 @@ function autoSlide() {
 
 setInterval(autoSlide, 11000);
 window.addEventListener("resize", updateWidth);
+
+const swiperPrev = document.getElementById("swiper-prev");
+const swiperNext = document.getElementById("swiper-next");
+
+swiperPrev.addEventListener("click", () => {
+  changeSlide(-1);
+  updatePosition();
+});
+
+swiperNext.addEventListener("click", () => {
+  changeSlide(1);
+  updatePosition();
+});
+
+

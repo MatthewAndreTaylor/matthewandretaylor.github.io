@@ -84,8 +84,8 @@
       "row",
       "row-cols-1",
       "row-cols-md-3",
-      "shadow-lg",
       "small",
+      "swiper-controls",
       "swiper-item",
       "text-center",
       "text-muted"
@@ -95,6 +95,9 @@
       "navContent",
       "projects",
       "swiper",
+      "swiper-controls",
+      "swiper-next",
+      "swiper-prev",
       "swiper-track",
       "timeline"
     ]

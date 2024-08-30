@@ -36,6 +36,10 @@ video {
   }
 }
 
+#navContent {
+  transition: height 1.5s ease;
+}
+
 #swiper {
   width: 60vw;
   margin: 0 auto;
@@ -57,4 +61,25 @@ video {
   #swiper {
     width: 90vw;
   }
+}
+
+.swiper-controls {
+  display: flex;
+  opacity: 0.8;
+  justify-content: center;
+  gap: 20px;
+}
+
+.swiper-controls a {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.swiper-controls a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.swiper-controls a.active {
+  background-color: rgba(0, 0, 0, 0.7);
 }

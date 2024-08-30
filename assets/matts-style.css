@@ -16,15 +16,21 @@ h1 {
 }
 
 video {
+  opacity: 0.5;
   max-width: 100%;
+  transition: ease-in 0.3s;
 }
 
 .swiper-content {
-  opacity: 0.5;
   transition: ease-in 0.3s;
 }
+
 .active {
-  transform: translateY(-6px);
+  opacity: 0.9;
+  transform: translateY(-5px);
+}
+
+.active video {
   opacity: 0.9;
 }
 

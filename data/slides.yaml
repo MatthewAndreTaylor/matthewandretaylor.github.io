@@ -15,5 +15,5 @@
   video_path: media/videos/native_demo.mp4
 
 - title: Websocket Multiplayer Demo
-  description: Box2d physics synced over Websockets
+  description: Box2d physics synched over Websockets
   video_path: media/videos/socket_demo.mp4

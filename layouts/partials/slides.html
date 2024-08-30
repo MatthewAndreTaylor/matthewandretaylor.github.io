@@ -13,6 +13,13 @@
           {{ end }}
         </div>
     </div>
+    <div class="swiper-controller">
+      {{ $index := 0 }}
+      {{ range .Site.Data.slides }}
+          <div class="swiper-button {{ if eq $index 0 }}active{{ end }}" data-index="{{ $index }}" type="button"></div>
+          {{ $index = add $index 1 }}
+      {{ end }}
+    </div>
 </div>
 
 {{ with resources.Get "matts-swiper.js" | minify | fingerprint }}

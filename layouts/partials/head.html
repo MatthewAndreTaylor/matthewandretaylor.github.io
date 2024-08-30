@@ -12,11 +12,11 @@ body {
 }
 </style>
 
-{{ $style := resources.Get "matts-style.css" | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}">
-
 {{ $css := resources.Get "css/bootstrap.min.css" | resources.PostCSS (dict "outputStyle" "compressed") | minify | fingerprint | resources.PostProcess }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+{{ $style := resources.Get "matts-style.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
 <link rel="icon" href="{{ "media/favicon.ico" | relURL }}" type="image/x-icon">
 

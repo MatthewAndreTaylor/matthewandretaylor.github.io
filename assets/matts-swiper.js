@@ -9,6 +9,19 @@ let isDragging = false;
 let width = track.getBoundingClientRect().width || track.offsetWidth;
 let lastMoveSignal = Date.now();
 
+const swiperButtons = document.querySelectorAll(".swiper-button");
+
+swiperButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    swiperButtons[currentIndex].classList.toggle("active");
+    button.classList.toggle("active");
+    slides[currentIndex].querySelector(".swiper-content").classList.toggle("active");
+    currentIndex = parseInt(button.getAttribute("data-index"));
+    slides[currentIndex].querySelector(".swiper-content").classList.toggle("active");
+    updatePosition();
+  });
+});
+
 swiper.addEventListener("mousedown", startSwipe);
 swiper.addEventListener("touchstart", startSwipe);
 swiper.addEventListener("mousemove", moveSwipe);
@@ -22,6 +35,7 @@ function isMouse(event) {
 }
 
 function changeSlide(changeNumber) {
+  swiperButtons[currentIndex].classList.toggle("active");
   slides[currentIndex].querySelector(".swiper-content").classList.toggle("active");
   lastMoveSignal = Date.now();
   currentIndex = (currentIndex + changeNumber) % slides.length;
@@ -29,6 +43,7 @@ function changeSlide(changeNumber) {
     currentIndex = slides.length - 1;
   }
   slides[currentIndex].querySelector(".swiper-content").classList.toggle("active");
+  swiperButtons[currentIndex].classList.toggle("active");
 }
 
 function startSwipe(event) {

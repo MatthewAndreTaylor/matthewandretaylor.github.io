@@ -4,7 +4,10 @@
           {{ $index := 0 }}
           {{ range .Site.Data.slides }}
               <div class="swiper-item">
-                <video class="{{ if eq $index 0 }}active{{ end }}" src="{{ .video_path }}" alt="{{ .title }}" preload="auto" autoplay loop muted></video>
+                <div class="swiper-content {{ if eq $index 0 }}active{{ end }}">
+                  <video src="{{ .video_path }}" alt="{{ .title }}" preload="auto" autoplay loop muted></video>
+                  <p>{{ .description }}</p>
+                </div>
               </div>
               {{ $index = add $index 1 }}
           {{ end }}

@@ -22,13 +22,13 @@ function isMouse(event) {
 }
 
 function changeSlide(changeNumber) {
-  slides[currentIndex].querySelector("video").classList.toggle("active");
+  slides[currentIndex].querySelector(".swiper-content").classList.toggle("active");
   lastMoveSignal = Date.now();
   currentIndex = (currentIndex + changeNumber) % slides.length;
   if (currentIndex < 0) {
     currentIndex = slides.length - 1;
   }
-  slides[currentIndex].querySelector("video").classList.toggle("active");
+  slides[currentIndex].querySelector(".swiper-content").classList.toggle("active");
 }
 
 function startSwipe(event) {
@@ -99,3 +99,14 @@ function autoSlide() {
 
 setInterval(autoSlide, 11000);
 window.addEventListener("resize", updateWidth);
+
+// Navbar toggle
+const toggle = document.querySelector(".navbar-toggler");
+
+toggle.addEventListener("click", () => {
+  ariaExpanded = toggle.getAttribute("aria-expanded");
+  toggle.setAttribute("aria-expanded", ariaExpanded === "true" ? "false" : "true");
+  const target = document.querySelector(toggle.getAttribute("data-bs-target"));
+  toggle.classList.toggle("collapsed");
+  target.classList.toggle("show");
+});

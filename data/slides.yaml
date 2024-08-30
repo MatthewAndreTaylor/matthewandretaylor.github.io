@@ -1,19 +1,19 @@
 - title: Fashion Project Demo
-  description: Convolutional neural networks segment fashion images.
+  description: Convolutional neural networks for segmenting fashion images
   video_path: media/videos/fashion_demo.mp4
 
 - title: Ragdoll Physics Demo
-  description: Ragdoll physics simulation.
+  description: Ragdoll character physics simulation
   video_path: media/videos/rag_demo.mp4
 
 - title: Jupyter Sketch Project Demo
-  description: Jupyter notebook stateful sketching project.
+  description: Jupyter notebook stateful sketching project
   video_path: media/videos/sketch_demo.mp4
 
 - title: React Native Gamedev Demo
-  description: React Native multiplayer game development.
+  description: React Native multiplayer game development
   video_path: media/videos/native_demo.mp4
 
 - title: Websocket Multiplayer Demo
-  description: Box2d physics synced over Websockets.
+  description: Box2d physics synced over Websockets
   video_path: media/videos/socket_demo.mp4

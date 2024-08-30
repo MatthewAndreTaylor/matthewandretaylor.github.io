@@ -86,6 +86,7 @@
       "row-cols-md-3",
       "shadow-lg",
       "small",
+      "swiper-content",
       "swiper-item",
       "text-center",
       "text-muted"

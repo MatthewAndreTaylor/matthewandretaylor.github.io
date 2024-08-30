@@ -17,6 +17,9 @@ h1 {
 
 video {
   max-width: 100%;
+}
+
+.swiper-content {
   opacity: 0.5;
   transition: ease-in 0.3s;
 }

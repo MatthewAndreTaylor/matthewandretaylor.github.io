@@ -22,6 +22,6 @@
     </div>
 </div>
 
-{{ with resources.Get "matts-swiper.js" | minify | fingerprint }}
+{{ with resources.Get "matts-swiper.js" | js.Build | minify | fingerprint }}
 <script src="{{ .RelPermalink }}" defer></script>
 {{ end }}

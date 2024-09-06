@@ -32,7 +32,7 @@
     - Flask
     - JavaScript
   github_url: https://matthewtaylor.pythonanywhere.com/
-  description: Matthew Taylor's Personal coding blog featuring a variety of small snippets
+  description: Personal coding blog featuring a variety of small examples and snippets
 
 - title: ipysketch-lite
   languages:

@@ -19,6 +19,10 @@ h1 {
   animation: fadeInUp 1s forwards;
 }
 
+.social {
+  margin-left: 5px;
+}
+
 video {
   opacity: 0.5;
   max-width: 100%;

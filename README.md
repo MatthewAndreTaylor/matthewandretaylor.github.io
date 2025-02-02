@@ -4,7 +4,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e61af12c-c11a-4b95-8cf6-53234ae10690/deploy-status)](https://app.netlify.com/sites/matthewtaylor/deploys)
 
-[![Portfolio Website](https://img.shields.io/badge/Website-matthewandretaylor.github.io-informational?style=flat-square&color=8B89CC&logo=Google-Chrome&logoColor=white)](https://matthewandretaylor.github.io/Matthew-Portfolio)
+[![Portfolio Website](https://img.shields.io/badge/Website-matthewandretaylor.github.io-informational?style=flat-square&color=8B89CC&logo=Google-Chrome&logoColor=white)](https://matthewandretaylor.github.io)
 
 [![Portfolio Website backup](https://img.shields.io/badge/Website-matthewtaylor.netlify.app-informational?style=flat-square&color=8B89CC&logo=Google-Chrome&logoColor=white)](https://matthewtaylor.netlify.app)
 

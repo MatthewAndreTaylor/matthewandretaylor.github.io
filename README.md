@@ -4,9 +4,15 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e61af12c-c11a-4b95-8cf6-53234ae10690/deploy-status)](https://app.netlify.com/sites/matthewtaylor/deploys)
 
-[![Website](https://img.shields.io/badge/Website-matthewtaylor.netlify.app-informational?style=flat-square&color=8B89CC&logo=Google-Chrome&logoColor=white)](https://matthewtaylor.netlify.app)
+[![Website](https://img.shields.io/badge/Website-matthewtaylor.netlify.app-informational?style=flat-square&color=8B89CC&logo=Google-Chrome&logoColor=white)](https://matthewandretaylor.github.io/Matthew-Portfolio)
 
-View at https://matthewtaylor.netlify.app
+View at 
+
+https://matthewandretaylor.github.io/Matthew-Portfolio
+
+or 
+
+https://matthewtaylor.netlify.app
 
 ## Goals ⛳
 

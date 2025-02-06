@@ -47,10 +47,9 @@ function changeSlide(changeNumber) {
 }
 
 function startSwipe(event) {
-  event.preventDefault();
+  if (isDragging) return;
   lastMoveSignal = Date.now();
 
-  if (isDragging) return;
   isDragging = true;
   if (isMouse(event)) {
     startX = event.clientX;
@@ -100,28 +99,28 @@ function updatePosition() {
   track.style.transform = `translateX(${currentTranslate}px)`;
 }
 
-function updateWidth() {
-  width = track.getBoundingClientRect().width || track.offsetWidth;
-  updatePosition();
-}
-
 function autoSlide() {
-  if (Date.now() - lastMoveSignal >= 11000) {
+  if (Date.now() - lastMoveSignal >= 10000) {
     changeSlide(1);
     updatePosition();
   }
 }
 
-setInterval(autoSlide, 11000);
-window.addEventListener("resize", updateWidth);
+setInterval(autoSlide, 10000);
+
+window.addEventListener("resize", () => {
+  track.style.transition = "none";
+  width = track.offsetWidth || track.getBoundingClientRect().width;
+  currentTranslate = currentIndex * -width;
+  track.style.transform = `translateX(${currentTranslate}px)`;
+});
+
 
 // Navbar toggle
 const toggle = document.querySelector(".navbar-toggler");
-
+const target = document.getElementById("navContent");
 toggle.addEventListener("click", () => {
-  ariaExpanded = toggle.getAttribute("aria-expanded");
-  toggle.setAttribute("aria-expanded", ariaExpanded === "true" ? "false" : "true");
-  const target = document.querySelector(toggle.getAttribute("data-bs-target"));
+  toggle.setAttribute("aria-expanded", toggle.getAttribute("aria-expanded") === "true" ? "false" : "true");
   toggle.classList.toggle("collapsed");
   target.classList.toggle("show");
 });

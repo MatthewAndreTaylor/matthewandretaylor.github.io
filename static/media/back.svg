@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1800px"
 	 height="1200px" viewBox="0 100 1800 1200" enable-background="new 0 0 1800 1200">
-	<g id="Layer_3">
+	<g>
 	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-422.2036" y1="144.0213" x2="2261.033" y2="144.0213">
 		<stop  offset="0" style="stop-color:#00AEEF"/>
 		<stop  offset="1" style="stop-color:#2E3192"/>
@@ -14,7 +14,7 @@
 		<animateTransform attributeName="transform" attributeType="XML" type="translate" dur="35" values="120,0;-120,0;120,0;" repeatCount="indefinite"/>
 	</path>
 </g>
-<g id="Layer_2">
+<g>
 	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-420.5411" y1="112.5312" x2="2257.8955" y2="112.5312">
 		<stop offset="0" style="stop-color:#262262"/>
 		<stop offset="1" style="stop-color:#00AEEF"/>
@@ -26,7 +26,7 @@
 		<animateTransform attributeName="transform" attributeType="XML" type="translate" dur="30" values="120,0;-120,0;120,0;" repeatCount="indefinite"/>
 	</path>
 </g>
-<g id="Layer_1">
+<g>
 	<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-427.0215" y1="95.573" x2="2261.0151" y2="95.573">
 		<stop offset="0" style="stop-color:#00AEEF"/>
 		<stop offset="1" style="stop-color:#2B3990"/>

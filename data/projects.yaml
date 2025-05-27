@@ -4,6 +4,34 @@
   github_url: https://github.com/MatthewAndreTaylor/FashionPixelLabel
   description: Segment fashion images using convolutional neural networks and superpixels
 
+- title: Generative-Animals
+  languages:
+    - Python
+  github_url: https://github.com/MatthewAndreTaylor/Generative-Animals
+  description: Customized diffusion model for creating animal images with classifier free guidance. I used a custom dataset of images I collected.
+
+- title: Weekend Shaders
+  languages:
+    - GLSL
+  github_url: https://github.com/MatthewAndreTaylor/WeekendShaders
+  description: A collection of GLSL shaders I create over my weekends using a variety of techniques.
+
+- title: MattBlog
+  languages:
+    - Python
+    - Flask
+    - JavaScript
+  github_url: https://matthewtaylor.pythonanywhere.com/
+  description: Personal coding blog featuring a variety of small examples and snippets
+
+- title: ipysketch-lite
+  languages:
+    - Python
+    - TypeScript
+    - JavaScript
+  github_url: https://github.com/MatthewAndreTaylor/ipysketch_lite
+  description: Sketching tool for Jupyter notebooks, dynamically updates the notebook as you draw
+
 - title: xml-to-pydict
   languages:
     - Python
@@ -26,22 +54,6 @@
   github_url: https://github.com/MatthewAndreTaylor/MatchingGame
   description: Match tiles to complete the board. Displays user actions in realtime to all players
 
-- title: MattBlog
-  languages:
-    - Python
-    - Flask
-    - JavaScript
-  github_url: https://matthewtaylor.pythonanywhere.com/
-  description: Personal coding blog featuring a variety of small examples and snippets
-
-- title: ipysketch-lite
-  languages:
-    - Python
-    - TypeScript
-    - JavaScript
-  github_url: https://github.com/MatthewAndreTaylor/ipysketch_lite
-  description: Sketching tool for Jupyter notebooks, dynamically updates the notebook as you draw
-
 - title: 207CourseProject
   languages:
     - Java
@@ -54,3 +66,16 @@
     - JavaScript
   github_url: https://github.com/MatthewAndreTaylor/Snowfall-Saga
   description: A winter themed MMO providing realtime multiplayer mini-games as microservices.
+
+- title: FreeFall-Game
+  languages:
+    - C#
+  github_url: https://github.com/MatthewAndreTaylor/FreeFall-Game
+  description: Ragdoll physics platformer game.
+
+
+- title: ChickenFarmingGame
+  languages:
+    - C#
+  github_url: https://github.com/MatthewAndreTaylor/ChickenFarm
+  description: Chicken farm simulation game. Isometric 2D tiling and movement system.

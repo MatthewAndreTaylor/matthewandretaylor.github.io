@@ -17,7 +17,7 @@
               <text fill="#586069" fill-opacity="1" stroke="none" xml:space="preserve" x="17" y="65" font-family="sans-serif" font-size="14" font-weight="400" font-style="normal">{{ .description }}</text>
 
               {{ $x := 33 }}
-              {{ $languageColors := dict "Python" "#3776ab" "C++" "#f34b7d" "C" "#649ad2" "JavaScript" "#f1e05a" "Firebase" "#ffcb2f" "ReactNative" "#61dafb" "Flask" "#FF0000" "Java" "#b07219" "TypeScript" "#2b7489"}}
+              {{ $languageColors := dict "Python" "#3776ab" "C++" "#f34b7d" "C" "#649ad2" "JavaScript" "#f1e05a" "Firebase" "#ffcb2f" "ReactNative" "#61dafb" "Flask" "#FF0000" "Java" "#b07219" "TypeScript" "#2b7489" "C#" "#800080" "GLSL" "#40e0d0"}}
               {{ range .languages }}
                   {{ $color := index $languageColors . }}
                   <circle cx="{{ $x }}" cy="86" r="7" stroke="none" fill="{{ $color }}"/>

@@ -1,19 +1,35 @@
-- title: Fashion Project Demo
-  description: Convolutional neural networks for segmenting fashion images
+- title: Fashion Segmentation Machine Learning Project
+  project_page: https://fashionlabeler.pythonanywhere.com
+  description: Convolutional neural networks for segmenting fashion images.
+    I experiment with different model archictures and provide an interactive webapp demo.
   video_path: media/videos/fashion_demo.mp4
 
 - title: Ragdoll Physics Demo
-  description: Ragdoll character physics simulation
+  project_page: https://matthewandretaylor.github.io/FreeFall-Game
+  description: Ragdoll character physics simulation. The character animation is driven by physics and the ragdoll constraints.
   video_path: media/videos/rag_demo.mp4
 
-- title: Jupyter Sketch Project Demo
-  description: Jupyter notebook stateful sketching project
+- title: Jupyter Notebook Sketching Project
+  project_page: https://matthewandretaylor.github.io/ipysketch_lite
+  description: |
+    Jupyter notebook stateful sketching project.
+    This project has helped me to test my neural network classification models and I have also used it to prompt my generative models.
   video_path: media/videos/sketch_demo.mp4
 
-- title: React Native Gamedev Demo
-  description: React Native multiplayer game development
+- title: Class-conditional Animal Image Generation
+  project_page: https://matthewandretaylor.github.io/Generative-Animals
+  description: I gathered a small dataset of animal images and trained a diffusion model to generate images of animals.
+    I used classifier free guidance to control the class of the generated image. I also tested using auto encoders and changing the architecture to speed up training time.
+  video_path: media/videos/diffusion_demo.mp4
+
+- title: React Native Game Development
+  project_page: https://github.com/MatthewAndreTaylor/MatchingGame
+  description: React Native multiplayer game development. The game tracks the state of the moves you make in realtime 
+    and updates the game board for all players.
   video_path: media/videos/native_demo.mp4
 
-- title: Websocket Multiplayer Demo
-  description: Box2d physics synched over Websockets
+- title: Websocket Multiplayer Games
+  project_page: https://github.com/MatthewAndreTaylor/websocket-multiplayer-physics
+  description: Box2d physics synched over Websockets.
+    I built a variety of multiplayer games using websockets including soccer, chess, trivia, and more.
   video_path: media/videos/socket_demo.mp4

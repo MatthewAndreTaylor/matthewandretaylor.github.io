@@ -12,6 +12,17 @@ h1 {
   animation: fadeInUp 1s forwards;
 }
 
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
 .social {
   margin-left: 5px;
 }

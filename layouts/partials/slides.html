@@ -1,10 +1,9 @@
 <div style="overflow-x: hidden;">
     <div id="swiper">
         <div id="swiper-track">
-          {{ $index := 0 }}
           {{ range .Site.Data.slides }}
               <div class="swiper-item">
-                <div class="swiper-content {{ if eq $index 0 }}active{{ end }}">
+                <div class="swiper-content">
                   <div class="card" style="height: 100%;">
                     <div class="card-header">
                       <a href="{{ .project_page }}" class="project-link">
@@ -18,7 +17,6 @@
                   </div>
                 </div>
               </div>
-              {{ $index = add $index 1 }}
           {{ end }}
         </div>
     </div>

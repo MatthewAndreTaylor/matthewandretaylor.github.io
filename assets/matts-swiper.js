@@ -11,6 +11,13 @@ let isDragging = false;
 let width = track.getBoundingClientRect().width || track.offsetWidth;
 let lastMoveSignal = Date.now();
 
+function loadVideo(video) {
+  if (!video.src) {
+    video.src = video.dataset.src;
+    video.load();
+  }
+}
+
 function updateQueueDisplay() {
   const len = queue.length;
   const prev2 = queue[(len - 2 + queue.length) % queue.length];
@@ -24,6 +31,13 @@ function updateQueueDisplay() {
   track.appendChild(current);
   track.appendChild(next1);
   track.appendChild(next2);
+
+  [prev2, prev1, current, next1, next2].forEach(slide => {
+    video = slide.querySelector("video");
+    if (video) {
+      loadVideo(video);
+    }
+  });
 
   track.style.transition = "none";
   track.style.transform = `translateX(${-2 * width}px)`;

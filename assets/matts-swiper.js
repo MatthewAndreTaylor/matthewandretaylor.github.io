@@ -32,6 +32,10 @@ function updateQueueDisplay() {
   track.appendChild(next1);
   track.appendChild(next2);
 
+  queue.forEach(slide => slide.classList.remove("active"));
+  void prev1.offsetWidth;
+  prev1.classList.add("active");
+
   [prev2, prev1, current, next1, next2].forEach(slide => {
     video = slide.querySelector("video");
     if (video) {
@@ -43,11 +47,6 @@ function updateQueueDisplay() {
   track.style.transform = `translateX(${-2 * width}px)`;
   currentTranslate = -2 * width;
   prevTranslate = -2 * width;
-
-  requestAnimationFrame(() => {
-    queue.forEach(slide => slide.classList.remove("active"));
-    prev1.classList.add("active");
-  });
 }
 
 function rotateQueue(direction) {

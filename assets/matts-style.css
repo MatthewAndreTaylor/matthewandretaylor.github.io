@@ -39,10 +39,6 @@ video {
   transition: ease-in 0.3s;
 }
 
-.active .swiper-content {
-  transform: translateY(-2px);
-}
-
 .active video {
   opacity: 0.9;
 }
@@ -59,7 +55,7 @@ video {
 }
 
 #swiper {
-  width: 50vw;
+  width: 100vw;
   margin: 0 auto;
 }
 #swiper-track {
@@ -70,7 +66,7 @@ video {
   min-width: calc(100% - 40px);
   margin: 0 20px;
   image-rendering: -webkit-optimize-contrast;
-  padding-top: 2px;   /* upward shift */
+  padding-top: 5px;   /* upward shift */
 }
 
 .swiper-controller {
@@ -101,8 +97,12 @@ video {
   }
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 1440px) {
   #swiper {
-    width: 100vw;
+    width: 50vw;
+  }
+
+  .active .swiper-content {
+    transform: translateY(-2px);
   }
 }

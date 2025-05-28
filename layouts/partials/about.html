@@ -4,7 +4,22 @@
             <h1 class="display-1 mb-5">{{ .Site.Title }}</h1>
         </div>
         <div class="col-md-6 mb-5">
-            <img src="{{ "media/portrait.webp" }}" alt="{{ .Site.Title }}" class="img-fluid" width="1100vw" height="1100vh">
+            {{ $image := resources.Get "portrait.webp" }}
+            {{ $small := $image.Fit "400x400" }}
+            {{ $medium := $image.Fit "800x800" }}
+            <img
+                src="{{ $image.RelPermalink }}"
+                srcset="
+                    {{ $small.RelPermalink }} 400w,
+                    {{ $medium.RelPermalink }} 800w,
+                    {{ $image.RelPermalink }} 3024w
+                "
+                sizes="(max-width: 400px) 100vw, (max-width: 800px) 80vw, 1100px"
+                alt="{{ .Site.Title }}"
+                class="img-fluid"
+                width="1100"
+                height="1100"
+                />
         </div>
         <div class="col-md">
             <p class="lead d-flex justify-content-center">{{ .Site.Data.about.personal }}</p>

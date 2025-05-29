@@ -1,13 +1,11 @@
 <section class="container py-2 mt-4 mb-4" id="timeline">
   {{ range .Site.Data.timeline }}
-  <div class="row no-gutters">
-    <div class="py-2">
-      <div class="card">
-        <div class="card-body">
-          <div class="text-muted small" style="float: right; margin: 0 8px;">{{ .date }}</div>
-          <h3 class="card-title">{{ .title }}</h3>
-          <p>{{ .description }}</p>
-        </div>
+  <div class="row py-2">
+    <div class="card">
+      <div class="card-body">
+        <small class="text-muted" style="float: right; margin: 0 8px;">{{ .date }}</small>
+        <h3 class="card-title">{{ .title }}</h3>
+        <p>{{ .description }}</p>
       </div>
     </div>
   </div>

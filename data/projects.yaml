@@ -8,13 +8,13 @@
   languages:
     - Python
   github_url: https://github.com/MatthewAndreTaylor/Generative-Animals
-  description: Customized diffusion model for creating animal images with classifier free guidance. I used a custom dataset of images I collected.
+  description: Customized diffusion model for creating animal images with classifier free guidance
 
 - title: Weekend Shaders
   languages:
     - GLSL
   github_url: https://github.com/MatthewAndreTaylor/WeekendShaders
-  description: A collection of GLSL shaders I create over my weekends using a variety of techniques.
+  description: A collection of GLSL shaders I create over my weekends using a variety of techniques
 
 - title: MattBlog
   languages:
@@ -65,17 +65,16 @@
     - Python
     - JavaScript
   github_url: https://github.com/MatthewAndreTaylor/Snowfall-Saga
-  description: A winter themed MMO providing realtime multiplayer mini-games as microservices.
+  description: A winter themed MMO providing realtime multiplayer mini-games as microservices
 
 - title: FreeFall-Game
   languages:
     - C#
   github_url: https://github.com/MatthewAndreTaylor/FreeFall-Game
-  description: Ragdoll physics platformer game.
-
+  description: Ragdoll physics platformer game
 
 - title: ChickenFarmingGame
   languages:
     - C#
   github_url: https://github.com/MatthewAndreTaylor/ChickenFarm
-  description: Chicken farm simulation game. Isometric 2D tiling and movement system.
+  description: Chicken farm game. Isometric 2D tiling and movement system

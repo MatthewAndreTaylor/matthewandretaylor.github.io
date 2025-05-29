@@ -4,6 +4,7 @@
 <meta name="author" content="{{ .Site.Params.author }}">
 <meta name="description" content="{{ .Site.Title }}">
 
+<link rel="preload" as="image" href="{{ "media/back.svg" | relURL }}" type="image/svg+xml">
 <style>
 :where(h1) {
   margin-block: 0.67em;
@@ -16,11 +17,10 @@ body {
 }
 </style>
 
-{{ $css := resources.Get "css/bootstrap.min.css" | resources.PostCSS (dict "outputStyle" "compressed") | minify | fingerprint | resources.PostProcess }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
-
-{{ $style := resources.Get "matts-style.css" | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ $bootstrap := resources.Get "css/bootstrap.min.css" | resources.PostCSS (dict "outputStyle" "compressed") }}
+{{ $style := resources.Get "matts-style.css" }}
+{{ $combined := slice $bootstrap $style | resources.Concat "css/combined.css" | minify | fingerprint | resources.PostProcess }}
+<link rel="stylesheet" href="{{ $combined.RelPermalink }}" integrity="{{ $combined.Data.Integrity }}">
 
 <link rel="icon" href="{{ "media/favicon.ico" | relURL }}" type="image/x-icon">
 

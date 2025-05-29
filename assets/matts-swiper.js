@@ -111,12 +111,12 @@ function endSwipe() {
 }
 
 function autoSlide() {
-  if (Date.now() - lastMoveSignal >= 10000) {
+  if (Date.now() - lastMoveSignal >= 11000) {
     rotateQueue(1);
   }
 }
 
-setInterval(autoSlide, 10000);
+setInterval(autoSlide, 11000);
 
 window.addEventListener("resize", () => {
   width = track.offsetWidth || track.getBoundingClientRect().width;

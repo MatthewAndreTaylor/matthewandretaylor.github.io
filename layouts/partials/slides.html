@@ -11,21 +11,21 @@
                       </a>
                       <p>{{ .description }}</p>
                     </div>
-                    <div class="card-body" style="align-items: center; justify-content: center; display: flex;">
-                      <video data-src="{{ .video_path }}" alt="{{ .title }}" autoplay loop muted></video>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                      <video src="{{ .video_path }}" alt="{{ .title }}" autoplay loop muted></video>
                     </div>
                   </div>
                 </div>
               </div>
           {{ end }}
         </div>
-    </div>
-    <div class="swiper-controller">
-      {{ $index := 0 }}
-      {{ range .Site.Data.slides }}
-          <div class="swiper-button {{ if eq $index 0 }}active{{ end }}" data-index="{{ $index }}" type="button"></div>
-          {{ $index = add $index 1 }}
-      {{ end }}
+        <div class="swiper-controller">
+        {{ $index := 0 }}
+        {{ range .Site.Data.slides }}
+            <div class="swiper-button {{ if eq $index 0 }}active{{ end }}" data-index="{{ $index }}" type="button"></div>
+            {{ $index = add $index 1 }}
+        {{ end }}
+      </div>
     </div>
 </div>
 

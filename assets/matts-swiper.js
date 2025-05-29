@@ -1,6 +1,6 @@
 const swiper = document.getElementById("swiper");
 const track = document.getElementById("swiper-track");
-const swiperButtons = document.querySelectorAll(".swiper-button");
+const swiperButtons = swiper.querySelectorAll(".swiper-button");
 const slides = Array.from(track.children);
 let queue = [...slides];
 let startX = 0;
@@ -11,38 +11,25 @@ let isDragging = false;
 let width = track.getBoundingClientRect().width || track.offsetWidth;
 let lastMoveSignal = Date.now();
 
-function loadVideo(video) {
-  if (!video.src) {
-    video.src = video.dataset.src;
-    video.load();
-  }
-}
-
 function updateQueueDisplay() {
   const len = queue.length;
-  const prev2 = queue[(len - 2 + queue.length) % queue.length];
-  const prev1 = queue[(len - 1 + queue.length) % queue.length];
+  const prev2 = queue[(len - 2) % len];
+  const prev1 = queue[(len - 1) % len];
   const current = queue[0];
-  const next1 = queue[1 % queue.length];
-  const next2 = queue[2 % queue.length];
+  const next1 = queue[1 % len];
+  const next2 = queue[2 % len];
+  const displayOrder = [prev2, prev1, current, next1, next2];
 
-  track.appendChild(prev2);
-  track.appendChild(prev1);
-  track.appendChild(current);
-  track.appendChild(next1);
-  track.appendChild(next2);
-
-  queue.forEach(slide => slide.classList.remove("active"));
-  void prev1.offsetWidth;
-  prev1.classList.add("active");
-
-  [prev2, prev1, current, next1, next2].forEach(slide => {
-    video = slide.querySelector("video");
-    if (video) {
-      loadVideo(video);
-    }
+  queue.forEach(slide => {
+    slide.classList.remove("active");
+    slide.style.order = len;
   });
 
+  displayOrder.forEach((slide, idx) => {
+    slide.style.order = idx;
+  });
+
+  current.classList.add("active");
   track.style.transition = "none";
   track.style.transform = `translateX(${-2 * width}px)`;
   currentTranslate = -2 * width;
@@ -69,17 +56,17 @@ swiperButtons.forEach((button) => {
     lastMoveSignal = Date.now();
     swiperButtons[currentIndex].classList.remove("active");
     button.classList.add("active");
-    const index = parseInt(button.getAttribute("data-index"));
-    currentIndex = index;
-    queue = [...slides.slice(index), ...slides.slice(0, index)];
+    currentIndex = parseInt(button.getAttribute("data-index"));
+    queue = [...slides.slice(currentIndex), ...slides.slice(0, currentIndex)];
     updateQueueDisplay();
   });
 });
 
-swiper.addEventListener("mousedown", startSwipe);
-swiper.addEventListener("touchstart", startSwipe);
-swiper.addEventListener("mousemove", moveSwipe);
-swiper.addEventListener("touchmove", moveSwipe);
+const passive = { passive: true };
+swiper.addEventListener("mousedown", startSwipe, passive);
+swiper.addEventListener("touchstart", startSwipe, passive);
+swiper.addEventListener("mousemove", moveSwipe, passive);
+swiper.addEventListener("touchmove", moveSwipe, passive);
 swiper.addEventListener("mouseup", endSwipe);
 swiper.addEventListener("mouseleave", endSwipe);
 swiper.addEventListener("touchend", endSwipe);
@@ -109,11 +96,17 @@ function moveSwipe(event) {
 function endSwipe() {
   if (!isDragging) return;
   const movedBy = currentTranslate - prevTranslate;
-  if (movedBy < -50) {
+  if (movedBy < -90) {
     rotateQueue(1);
-  } else if (movedBy > 50) {
+  } else if (movedBy > 90) {
     rotateQueue(-1);
-  }
+  } else {
+    track.style.transition = "transform 0.2s ease-in-out";
+    track.style.transform = `translateX(${-2 * width}px)`;
+    currentTranslate = -2 * width;
+    prevTranslate = -2 * width;
+  } 
+
   isDragging = false;
 }
 

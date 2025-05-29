@@ -1,6 +1,8 @@
 <div style="overflow-x: hidden;">
     <div id="swiper">
         <div id="swiper-track">
+          {{ $index := 0 }}
+          {{ $lastIndex := sub (len (index .Site.Data "slides")) 1 }}
           {{ range .Site.Data.slides }}
               <div class="swiper-item">
                 <div class="swiper-content">
@@ -12,11 +14,16 @@
                       <p>{{ .description }}</p>
                     </div>
                     <div class="card-body d-flex justify-content-center align-items-center">
-                      <video src="{{ .video_path }}" alt="{{ .title }}" autoplay loop muted></video>
+                      {{ if or (eq $index 0) (eq $index 1) (eq $index $lastIndex) }}
+                        <video src="{{ .video_path }}" alt="{{ .title }}" autoplay loop muted></video>
+                      {{ else }}
+                        <video data-src="{{ .video_path }}" alt="{{ .title }}" autoplay loop muted></video>
+                      {{ end }}
                     </div>
                   </div>
                 </div>
               </div>
+              {{ $index = add $index 1 }}
           {{ end }}
         </div>
         <div class="swiper-controller">

@@ -11,6 +11,13 @@ let isDragging = false;
 let width = track.getBoundingClientRect().width || track.offsetWidth;
 let lastMoveSignal = Date.now();
 
+function loadVideo(video) {
+  if (video && !video.src) {
+    video.src = video.dataset.src;
+    video.load();
+  }
+}
+
 function updateQueueDisplay() {
   const len = queue.length;
   const prev2 = queue[(len - 2) % len];
@@ -27,6 +34,9 @@ function updateQueueDisplay() {
 
   displayOrder.forEach((slide, idx) => {
     slide.style.order = idx;
+
+    // Load video if it exists
+    loadVideo(slide.querySelector("video"));
   });
 
   current.classList.add("active");

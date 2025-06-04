@@ -3,6 +3,10 @@
   50% { opacity: 0; }
 }
 
+.img-fluid {
+  border-radius: 600px;
+}
+
 .navbar {
   padding: 0.5rem;
 }

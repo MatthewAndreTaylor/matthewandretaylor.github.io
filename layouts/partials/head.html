@@ -17,7 +17,7 @@ body {
 }
 </style>
 
-{{ $bootstrap := resources.Get "css/bootstrap.min.css" | resources.PostCSS (dict "outputStyle" "compressed") }}
+{{ $bootstrap := resources.Get "css/bootstrap.min.css" | css.PostCSS (dict "outputStyle" "compressed") }}
 {{ $style := resources.Get "matts-style.css" }}
 {{ $combined := slice $bootstrap $style | resources.Concat "css/combined.css" | minify | fingerprint | resources.PostProcess }}
 <link rel="stylesheet" href="{{ $combined.RelPermalink }}" integrity="{{ $combined.Data.Integrity }}">

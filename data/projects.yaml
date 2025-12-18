@@ -78,3 +78,9 @@
     - C#
   github_url: https://github.com/MatthewAndreTaylor/ChickenFarm
   description: Chicken farm game. Isometric 2D tiling and movement system
+
+- title: Generative-SVG
+  languages:
+    - Python
+  github_url: https://github.com/MatthewAndreTaylor/Generative-SVG
+  description: Generate SVG sketches using transformer models

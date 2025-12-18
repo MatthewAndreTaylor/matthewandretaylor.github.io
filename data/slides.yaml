@@ -33,3 +33,9 @@
   description: Box2d physics synched over Websockets.
     I built a variety of multiplayer games using websockets including soccer, chess, trivia, and more.
   video_path: media/videos/socket_demo.mp4
+
+- title: Generative Sketch
+  project_page: https://github.com/MatthewAndreTaylor/Generative-SVG
+  description: I built decoder only transformer models to generate sketches.
+    Designing my own model and training methods to improve the quality and speed of sketch generation.
+  video_path: media/videos/generative_sketch.svg

@@ -12,7 +12,13 @@
                       <p>{{ .description }}</p>
                     </div>
                     <div class="card-body d-flex justify-content-center align-items-center">
-                      <video src="{{ .video_path }}" alt="{{ .title }}" autoplay loop muted></video>
+                      <div class="media">
+                      {{ if eq (findRE "\\.svg$" .video_path | len) 1 }}
+                        <embed src="{{ .video_path }}" alt="{{ .title }}" class="slide"/>
+                      {{ else }}
+                        <video src="{{ .video_path }}" alt="{{ .title }}" class="slide" autoplay loop muted></video>
+                      {{ end }}
+                      </div>
                     </div>
                   </div>
                 </div>

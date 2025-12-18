@@ -29,17 +29,21 @@ h2 {
   margin-left: 5px;
 }
 
-video {
-  opacity: 0.5;
-  max-width: 100%;
-  transition: ease-in 0.2s;
+.media {
+  pointer-events: none;
 }
 
 .swiper-content {
   transition: ease-in 0.2s;
 }
 
-.active video {
+.slide {
+  opacity: 0.5;
+  max-width: 100%;
+  transition: ease-in 0.2s;
+}
+
+.active .slide {
   opacity: 0.9;
 }
 

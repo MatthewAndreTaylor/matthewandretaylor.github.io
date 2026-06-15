@@ -39,6 +39,7 @@ h2 {
 
 .slide {
   opacity: 0.5;
+  height: 40vh;
   max-width: 100%;
   transition: ease-in 0.2s;
 }
@@ -55,7 +56,6 @@ h2 {
   display: flex;
 }
 .swiper-item {
-  display: flex;
   min-width: calc(100% - 40px);
   margin: 0 20px;
   image-rendering: -webkit-optimize-contrast;

@@ -15,7 +15,9 @@
                     {{ if eq (findRE "\\.svg$" .video_path | len) 1 }}
                       <embed src="{{ .video_path }}" alt="{{ .title }}" class="slide"/>
                     {{ else }}
-                      <video src="{{ .video_path }}" alt="{{ .title }}" class="slide" autoplay loop muted></video>
+                      <video alt="{{ .title }}" class="slide" autoplay loop muted preload="none" loading="lazy">
+                        <source src="{{ .video_path }}" type="video/mp4">
+                      </video>
                     {{ end }}
                     </div>
                   </div>

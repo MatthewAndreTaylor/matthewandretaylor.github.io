@@ -33,13 +33,13 @@ h2 {
   pointer-events: none;
 }
 
-.swiper-content {
+.card {
+  height: 100% !important;
   transition: ease-in 0.2s;
 }
 
 .slide {
   opacity: 0.5;
-  height: 40vh;
   max-width: 100%;
   transition: ease-in 0.2s;
 }
@@ -92,7 +92,7 @@ h2 {
 
 @media (min-width: 1440px) {
   #swiper {
-    width: 50vw;
+    width: 45vw;
   }
 
   .active .swiper-content {

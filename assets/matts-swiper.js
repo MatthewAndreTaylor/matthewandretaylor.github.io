@@ -66,7 +66,7 @@ const passive = { passive: true };
 swiper.addEventListener("mousedown", startSwipe, passive);
 swiper.addEventListener("touchstart", startSwipe, passive);
 swiper.addEventListener("mousemove", moveSwipe, passive);
-swiper.addEventListener("touchmove", moveSwipe, passive);
+swiper.addEventListener("touchmove", moveSwipe);
 swiper.addEventListener("mouseup", endSwipe);
 swiper.addEventListener("mouseleave", endSwipe);
 swiper.addEventListener("touchend", endSwipe);

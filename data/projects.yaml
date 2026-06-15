@@ -84,3 +84,9 @@
     - Python
   github_url: https://github.com/MatthewAndreTaylor/Generative-SVG
   description: Generate SVG sketches using transformer models
+
+- title: TinySim
+  languages:
+    - Python
+  github_url: https://github.com/MatthewAndreTaylor/TinySim
+  description: Minimal simulation environments for robotics and machine learning.

@@ -4,9 +4,10 @@
     Designed my own model architecture and training methods to improve the quality and speed of sketch generation.
   video_path: media/videos/generative_sketch.svg
 
-- title: Ragdoll Physics Demo
+- title: Ragdoll Character Physics
   project_page: https://matthewandretaylor.github.io/FreeFall-Game
   description: Ragdoll character physics simulation. Character animation is driven by physics and the ragdoll constraints.
+    Built a prototype game for testing the character.
   video_path: media/videos/rag_demo.mp4
 
 - title: Jupyter Notebook Sketching Project
@@ -24,8 +25,8 @@
 
 - title: Class-conditional Animal Image Generation
   project_page: https://matthewandretaylor.github.io/Generative-Animals
-  description: Curated a small dataset of animal images and trained a diffusion model to generate new images.
-    Used classifier-free guidance to control the classes of generated images. Tested using autoencoders and changing the architecture to speed up training time.
+  description: Curated a small animal image dataset and trained a diffusion model to generate class-conditional images.
+    Explored autoencoders and architectural optimizations to reduce training time.
   video_path: media/videos/diffusion_demo.mp4
 
 - title: Websocket Multiplayer Games

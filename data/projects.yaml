@@ -85,8 +85,8 @@
   github_url: https://github.com/MatthewAndreTaylor/Generative-SVG
   description: Generate SVG sketches using transformer models
 
-- title: TinySim
+- title: picogym
   languages:
     - Python
-  github_url: https://github.com/MatthewAndreTaylor/TinySim
+  github_url: https://github.com/MatthewAndreTaylor/picogym
   description: Minimal simulation environments for robotics and machine learning.

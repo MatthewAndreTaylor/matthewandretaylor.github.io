@@ -5,23 +5,22 @@
 <meta name="description" content="{{ .Site.Title }}">
 
 <link rel="preload" as="image" href="{{ "media/back.svg" | relURL }}" type="image/svg+xml">
+
+{{ $bootstrap := resources.Get "css/bootstrap.min.css" | css.PostCSS (dict "outputStyle" "compressed") }}
+{{ $style := resources.Get "matts-style.css" }}
+{{ $combined := slice $bootstrap $style | resources.Concat "css/combined.css" | minify }}
 <style>
 :where(h1) {
   margin-block: 0.67em;
   font-size: 2em;
 }
 body {
-    background-image: url('{{ "media/back.svg" }}');
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url('{{ "media/back.svg" | relURL }}');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+{{ $combined.Content | safeCSS }}
 </style>
-
-{{ $bootstrap := resources.Get "css/bootstrap.min.css" | css.PostCSS (dict "outputStyle" "compressed") }}
-{{ $style := resources.Get "matts-style.css" }}
-{{ $combined := slice $bootstrap $style | resources.Concat "css/combined.css" | minify | fingerprint | resources.PostProcess }}
-<link rel="preload" as="style" href="{{ $combined.RelPermalink }}" integrity="{{ $combined.Data.Integrity }}">
-<link rel="stylesheet" href="{{ $combined.RelPermalink }}" integrity="{{ $combined.Data.Integrity }}">
 
 <link rel="icon" href="{{ "media/favicon.ico" | relURL }}" type="image/x-icon">
 

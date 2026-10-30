@@ -80,7 +80,9 @@ jobs:
           HUGO_ENVIRONMENT: production
           TZ: America/Los_Angeles
         run: |
+          hugo --baseURL "${{ steps.pages.outputs.base_url }}/"
           hugo \
+            --ignoreCache \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"

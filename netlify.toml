@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "hugo --gc --minify"
+  command = "hugo && hugo --ignoreCache --gc --minify"
 
   [build.environment]
     HUGO_VERSION = "0.128.2"
@@ -9,7 +9,7 @@
   HUGO_ENV = "production"
 
 [context.split1]
-  command = "hugo --gc --minify"
+  command = "hugo && hugo --ignoreCache --gc --minify"
 
   [context.split1.environment]
     HUGO_ENV = "production"

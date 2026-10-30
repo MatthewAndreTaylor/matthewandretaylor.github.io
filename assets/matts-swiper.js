@@ -105,7 +105,7 @@ function endSwipe() {
     track.style.transform = `translateX(${-2 * width}px)`;
     currentTranslate = -2 * width;
     prevTranslate = -2 * width;
-  } 
+  }
 
   isDragging = false;
 }
@@ -124,6 +124,12 @@ window.addEventListener("resize", () => {
 });
 
 updateQueueDisplay();
+
+window.addEventListener("load", () => {
+  track.querySelectorAll("video").forEach((video) => {
+    video.autoplay = true;
+  });
+});
 
 // Navbar toggle
 const toggle = document.querySelector(".navbar-toggler");

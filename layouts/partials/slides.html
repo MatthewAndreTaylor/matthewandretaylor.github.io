@@ -1,38 +1,38 @@
 <div style="overflow-x: hidden;">
-    <div id="swiper">
-        <div id="swiper-track">
-          {{ range .Site.Data.slides }}
-            <div class="swiper-item">
-              <div class="card">
-                  <div class="card-header">
-                    <a href="{{ .project_page }}" class="project-link">
-                      <h2>{{ .title }}</h2>
-                    </a>
-                    <p>{{ .description }}</p>
-                  </div>
-                  <div class="card-body d-flex justify-content-center align-items-center">
-                    <div class="media">
-                    {{ if eq (findRE "\\.svg$" .video_path | len) 1 }}
-                      <embed src="{{ .video_path }}" alt="{{ .title }}" class="slide"/>
-                    {{ else }}
-                      <video alt="{{ .title }}" class="slide" autoplay loop muted preload="none" loading="lazy">
-                        <source src="{{ .video_path }}" type="video/mp4">
-                      </video>
-                    {{ end }}
-                    </div>
-                  </div>
-                </div>
+  <div id="swiper">
+    <div id="swiper-track">
+      {{ range .Site.Data.slides }}
+      <div class="swiper-item">
+        <div class="card">
+          <div class="card-header">
+            <a href="{{ .project_page }}" class="project-link">
+              <h2>{{ .title }}</h2>
+            </a>
+            <p>{{ .description }}</p>
+          </div>
+          <div class="card-body d-flex justify-content-center align-items-center">
+            <div class="media">
+              {{ if eq (findRE "\\.svg$" .video_path | len) 1 }}
+              <embed src="{{ .video_path }}" alt="{{ .title }}" class="slide" />
+              {{ else }}
+              <video alt="{{ .title }}" class="slide" loop muted playsinline loading="lazy">
+                <source src="{{ .video_path }}" type="video/mp4">
+              </video>
+              {{ end }}
             </div>
-          {{ end }}
+          </div>
         </div>
-        <div class="swiper-controller">
-        {{ $index := 0 }}
-        {{ range .Site.Data.slides }}
-            <div class="swiper-button {{ if eq $index 0 }}active{{ end }}" data-index="{{ $index }}" type="button"></div>
-            {{ $index = add $index 1 }}
-        {{ end }}
       </div>
+      {{ end }}
     </div>
+    <div class="swiper-controller">
+      {{ $index := 0 }}
+      {{ range .Site.Data.slides }}
+      <div class="swiper-button {{ if eq $index 0 }}active{{ end }}" data-index="{{ $index }}" type="button"></div>
+      {{ $index = add $index 1 }}
+      {{ end }}
+    </div>
+  </div>
 </div>
 
 {{ with resources.Get "matts-swiper.js" | js.Build | minify | fingerprint }}

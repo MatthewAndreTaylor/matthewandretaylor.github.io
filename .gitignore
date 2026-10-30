@@ -2,3 +2,5 @@ public
 *.lock
 node_modules
 resources/_gen
+__pycache__
+.venv

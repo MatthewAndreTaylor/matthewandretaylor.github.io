@@ -1,20 +1,49 @@
+- title: Generative-SVG
+  languages:
+    - Jupyter Notebook
+    - Python
+    - JavaScript
+  github_url: https://github.com/MatthewAndreTaylor/Generative-SVG
+  description: Conditional Sketch Generation and Completion
+
+- title: gRPC-Client-Benchmark
+  languages:
+    - Python
+    - Rust
+    - C++
+    - Shell
+    - Dockerfile
+  github_url: https://github.com/MatthewAndreTaylor/gRPC-Client-Benchmark
+  description: gRPC Python client performance benchmarking
+
+- title: WeekendShaders
+  languages:
+    - GLSL
+    - Python
+  github_url: https://github.com/MatthewAndreTaylor/WeekendShaders
+  description: Shader artwork and projects made on my weekends
+
+- title: ipysketch_lite
+  languages:
+    - JavaScript
+    - Python
+  github_url: https://github.com/MatthewAndreTaylor/ipysketch_lite
+  description: Interactive sketching tool for Jupyter notebooks
+
 - title: FashionPixelLabel
   languages:
+    - Jupyter Notebook
     - Python
   github_url: https://github.com/MatthewAndreTaylor/FashionPixelLabel
   description: Segment fashion images using convolutional neural networks and superpixels
 
-- title: Generative-Animals
+- title: Generative-Animal-Images
   languages:
+    - Jupyter Notebook
     - Python
-  github_url: https://github.com/MatthewAndreTaylor/Generative-Animals
-  description: Customized diffusion model for creating animal images with classifier free guidance
-
-- title: Weekend Shaders
-  languages:
-    - GLSL
-  github_url: https://github.com/MatthewAndreTaylor/WeekendShaders
-  description: A collection of GLSL shaders I create over my weekends using a variety of techniques
+    - JavaScript
+  github_url: https://github.com/MatthewAndreTaylor/Generative-Animal-Images
+  description: Diffusion-Based Animal Image Generation from a Small Dataset
 
 - title: MattBlog
   languages:
@@ -22,71 +51,84 @@
     - Flask
     - JavaScript
   github_url: https://matthewtaylor.pythonanywhere.com/
-  description: Personal coding blog featuring a variety of small examples and snippets
+  description: Personal coding blog with small examples and snippets
 
-- title: ipysketch-lite
+- title: xmlpydict
   languages:
     - Python
-    - TypeScript
-    - JavaScript
-  github_url: https://github.com/MatthewAndreTaylor/ipysketch_lite
-  description: Sketching tool for Jupyter notebooks, dynamically updates the notebook as you draw
-
-- title: xml-to-pydict
-  languages:
-    - Python
-    - C++
-  github_url: https://github.com/MatthewAndreTaylor/xml-to-pydict
+    - Cython
+  github_url: https://github.com/MatthewAndreTaylor/xmlpydict
   description: Python XML to Dictionary Parser
+
+- title: newton_continuum_robot_interaction
+  languages:
+    - Python
+  github_url: https://github.com/MatthewAndreTaylor/newton_continuum_robot_interaction
+  description: Continuum robot interactions with Newton physics and NVIDIA Warp
 
 - title: fastqueue
   languages:
     - Python
     - C
+    - C++
   github_url: https://github.com/MatthewAndreTaylor/fastqueue
-  description: Python Fast Queue Library, fine tune your queue for performance
-
-- title: MatchingGame
-  languages:
-    - JavaScript
-    - Firebase
-    - ReactNative
-  github_url: https://github.com/MatthewAndreTaylor/MatchingGame
-  description: Match tiles to complete the board. Displays user actions in realtime to all players
-
-- title: 207CourseProject
-  languages:
-    - Java
-  github_url: https://github.com/MatthewAndreTaylor/207CourseProject
-  description: Forest Visualization 3D MVC. Using Data collected from the city of Kitchener
-
-- title: SnowFallSaga
-  languages:
-    - Python
-    - JavaScript
-  github_url: https://github.com/MatthewAndreTaylor/Snowfall-Saga
-  description: A winter themed MMO providing realtime multiplayer mini-games as microservices
-
-- title: FreeFall-Game
-  languages:
-    - C#
-  github_url: https://github.com/MatthewAndreTaylor/FreeFall-Game
-  description: Ragdoll physics platformer game
-
-- title: ChickenFarmingGame
-  languages:
-    - C#
-  github_url: https://github.com/MatthewAndreTaylor/ChickenFarm
-  description: Chicken farm game. Isometric 2D tiling and movement system
-
-- title: Generative-SVG
-  languages:
-    - Python
-  github_url: https://github.com/MatthewAndreTaylor/Generative-SVG
-  description: Generate SVG sketches using transformer models
+  description: Fast Single-ended Queues for Python
 
 - title: picogym
   languages:
     - Python
+    - JavaScript
   github_url: https://github.com/MatthewAndreTaylor/picogym
-  description: Minimal simulation environments for robotics and machine learning.
+  description: Minimal robotics and machine learning simulation environments
+
+- title: continuum_robot_interaction
+  languages:
+    - Python
+  github_url: https://github.com/MatthewAndreTaylor/continuum_robot_interaction
+  description: Continuum robot interactions and vision based collision prediction
+
+- title: supply-chain-vulnerabilities
+  languages:
+    - Python
+    - Shell
+    - JavaScript
+  github_url: https://github.com/MatthewAndreTaylor/supply-chain-vulnerabilities
+  description: Supply chain vunerabilities demonstrated with python packages
+
+- title: lil_buff_writer
+  languages:
+    - Python
+  github_url: https://github.com/MatthewAndreTaylor/lil_buff_writer
+  description: Compact writing utility for storing and retrieving messages
+
+- title: FreeFall-Game
+  languages: []
+  github_url: https://github.com/MatthewAndreTaylor/FreeFall-Game
+  description: Active Ragdoll platformer
+
+- title: Sokoboards
+  languages:
+    - C++
+    - Python
+  github_url: https://github.com/MatthewAndreTaylor/Sokoboards
+  description: Using bitboards to play, solve and generate Sokoban boards
+
+- title: Snowfall-Saga
+  languages:
+    - Python
+    - JavaScript
+    - Dockerfile
+  github_url: https://github.com/MatthewAndreTaylor/Snowfall-Saga
+  description: CSC301 Project
+
+- title: CSC207Project
+  languages:
+    - Java
+  github_url: https://github.com/MatthewAndreTaylor/CSC207Project
+  description: Forest Visualization 3D MVC using data collected from the city of Kitchener
+
+- title: MatchingGame
+  languages:
+    - JavaScript
+  github_url: https://github.com/MatthewAndreTaylor/MatchingGame
+  description: Turn based matching game with live multiplayer updates
